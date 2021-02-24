@@ -43,11 +43,11 @@ public class Player : MonoBehaviour
             }
             else if (Ticker.instance.CheckTouchState() == TouchState.Good)
             {
-                Debug.LogError("PlayerGood");
+                //Debug.LogError("PlayerGood");
             }
             else
             {
-                Debug.LogError("PlayerBad");
+                //Debug.LogError("PlayerBad");
             }
         }
     }

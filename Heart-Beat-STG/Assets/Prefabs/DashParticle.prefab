@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1617144804552837744}
   - component: {fileID: 18910325928372014}
   - component: {fileID: 5180283845561285680}
-  - component: {fileID: 4041287927949769408}
+  - component: {fileID: 4462507218222957330}
   m_Layer: 0
   m_Name: DashParticle
   m_TagString: Untagged
@@ -4789,7 +4789,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -4813,22 +4813,15 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!95 &4041287927949769408
-Animator:
-  serializedVersion: 3
+--- !u!114 &4462507218222957330
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4278512984306478588}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cceb328546f6b4b31aa96314d10f3189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

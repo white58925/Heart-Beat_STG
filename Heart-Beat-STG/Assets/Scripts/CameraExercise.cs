@@ -30,11 +30,11 @@ public class CameraExercise : MonoBehaviour
             }
             else if (Ticker.instance.CheckTouchState() == TouchState.Good)
             {
-                Debug.LogError("CameraGood");
+                //Debug.LogError("CameraGood");
             }
             else
             {
-                Debug.LogError("CameraBad");
+                //Debug.LogError("CameraBad");
             }
         }
     }
