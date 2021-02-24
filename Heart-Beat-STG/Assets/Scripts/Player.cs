@@ -18,45 +18,36 @@ public class Player : MonoBehaviour
     private bool DashBool;
     private float dashSpeed;
     public GameObject dashEffect;
-
-    DateTime recordDateTime;
-    DateTime startDateTime;
-    
-
+  
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         bc = GetComponent<BoxCollider2D>();
 
         SetUpMoveBoundaries();
-
-        startDateTime = DateTime.Now;
-        StartCoroutine(Ticker());
     }
 
     // Update is called once per frame
     void Update()
     {
         Move();
-
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, boundary_xMin, boundary_xMax),
         Mathf.Clamp(transform.position.y, boundary_yMin, boundary_yMax));
-
-        DateTime nowDateTime = DateTime.Now;
-        TimeSpan timeSpan = nowDateTime.Subtract(recordDateTime);
-        float timeSpanInMilliSeconds = timeSpan.Milliseconds;
-
         if (Input.GetKeyDown("space"))
         {
-            if (timeSpanInMilliSeconds < tolerance)
+            if (Ticker.instance.CheckTouchState() == TouchState.Excellent)
             {
-                Debug.LogError("Perfact");
+                Debug.LogError("PlayerDash");
                 Dash();
                 Instantiate(dashEffect, transform.position, Quaternion.identity);
             }
+            else if (Ticker.instance.CheckTouchState() == TouchState.Good)
+            {
+                Debug.LogError("PlayerGood");
+            }
             else
             {
-                Debug.LogError("Bad");
+                Debug.LogError("PlayerBad");
             }
         }
     }
@@ -113,16 +104,6 @@ public class Player : MonoBehaviour
 
         DashBool = false;
         bc.enabled = true;
-    }
-
-    IEnumerator Ticker()
-    {
-        while (true)
-        {
-            recordDateTime = DateTime.Now;
-            TimeSpan timeSpan = recordDateTime.Subtract(startDateTime);
-            yield return new WaitForSeconds(1);
-        }
     }
 }
 

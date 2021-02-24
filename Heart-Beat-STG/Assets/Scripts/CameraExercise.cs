@@ -9,54 +9,34 @@ public class CameraExercise : MonoBehaviour
     [SerializeField] Image cueImage;
     private Animator anim;
 
-    private bool DashBool;
-
-    DateTime recordDateTime;
-    DateTime startDateTime;
-    public float tolerance = 100f;
-
-
     void Start()
     {
         anim = GetComponent<Animator>();
-
-        startDateTime = DateTime.Now;
-        StartCoroutine(Ticker());
     }
 
     // Update is called once per frame
     void Update()
     {
-        DateTime nowDateTime = DateTime.Now;
-        TimeSpan timeSpan = nowDateTime.Subtract(recordDateTime);
-        float timeSpanInMilliSeconds = timeSpan.Milliseconds;
-
-        float colorHint = timeSpanInMilliSeconds / 1000f;
+        float colorHint = (float)Ticker.instance.GetTimeSpanInMilliSeconds() / 1000f;
         cueImage.color = new Color(colorHint, colorHint, colorHint, 1f);
 
         anim.SetBool("isDashing", false);
-
-        if (timeSpanInMilliSeconds < tolerance)
-        {
-            cueImage.color = Color.red;
-        }
-
         if (Input.GetKeyDown("space"))
         {
-            if (timeSpanInMilliSeconds < tolerance)
+            if (Ticker.instance.CheckTouchState() == TouchState.Excellent)
             {
+                Debug.LogError("CameraDash");
                 anim.SetBool("isDashing", true);
+            }
+            else if (Ticker.instance.CheckTouchState() == TouchState.Good)
+            {
+                Debug.LogError("CameraGood");
+            }
+            else
+            {
+                Debug.LogError("CameraBad");
             }
         }
     }
 
-    IEnumerator Ticker()
-    {
-        while (true)
-        {
-            recordDateTime = DateTime.Now;
-            TimeSpan timeSpan = recordDateTime.Subtract(startDateTime);
-            yield return new WaitForSeconds(1);
-        }
-    }
 }
