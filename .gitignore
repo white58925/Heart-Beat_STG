@@ -2,15 +2,15 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
-
-# Asset meta data should only be ignored when the corresponding asset is also ignored
+/Heart-Beat-STG/[Ll]ibrary/
+/Heart-Beat-STG/[Tt]emp/
+/Heart-Beat-STG/[Oo]bj/
+/Heart-Beat-STG/[Bb]uild/
+/Heart-Beat-STG/[Bb]uilds/
+/Heart-Beat-STG/[Ll]ogs/
+/Heart-Beat-STG/[Mm]emoryCaptures/
+/Heart-Beat-STG/Assets/Sound
+# Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
@@ -58,3 +58,5 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Visual Studio Code file
+.vscode/
