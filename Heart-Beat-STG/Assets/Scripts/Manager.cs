@@ -18,35 +18,55 @@ public class Manager : MonoBehaviour
 
     public static float BackgroundTimer;
     public Executer[] TimeExecuter;
+    private void Start()
+    {
+        foreach(Executer executer in TimeExecuter)
+        {
+            StartCoroutine(AnimationCorountine(executer));
+        }
 
+    }
+    IEnumerator AnimationCorountine(Executer executer)
+    {
+        yield return new WaitForSeconds(executer.StartTime);
+        foreach (GameObject obj in executer.Objs)
+        {
+            obj.SetActive(true);
+        }
+        yield return new WaitForSeconds(executer.EndTime - executer.StartTime);
+        foreach (GameObject obj in executer.Objs)
+        {
+            obj.SetActive(false);
+        }
+    }
     void Update()
     {
-        BackgroundTimer += Time.deltaTime;
+        //BackgroundTimer += Time.deltaTime;
 
-        if (!GameEnd)
-        {
-            if (Event < TimeExecuter.Length)
-            {
-                if (!ExecuteOnce)
-                {
-                    if (BackgroundTimer >= TimeExecuter[Event].StartTime && BackgroundTimer <= TimeExecuter[Event].EndTime)
-                    {
-                        foreach (GameObject obj in TimeExecuter[Event].Objs)
-                        {
-                            obj.SetActive(true);
-                        }
+        //if (!GameEnd)
+        //{
+        //    if (Event < TimeExecuter.Length)
+        //    {
+        //        if (!ExecuteOnce)
+        //        {
+        //            if (BackgroundTimer >= TimeExecuter[Event].StartTime && BackgroundTimer <= TimeExecuter[Event].EndTime)
+        //            {
+        //                foreach (GameObject obj in TimeExecuter[Event].Objs)
+        //                {
+        //                    obj.SetActive(true);
+        //                }
 
-                        ExecuteOnce = true;
-                    }
-                }
+        //                ExecuteOnce = true;
+        //            }
+        //        }
 
-                if (BackgroundTimer > TimeExecuter[Event].EndTime)
-                {
-                    Event += 1;
-                    ExecuteOnce = false;
-                }
-            }
+        //        if (BackgroundTimer > TimeExecuter[Event].EndTime)
+        //        {
+        //            Event += 1;
+        //            ExecuteOnce = false;
+        //        }
+        //    }
 
-        }
+        //}
     }
 }
