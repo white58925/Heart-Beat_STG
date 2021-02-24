@@ -626,34 +626,6 @@ MonoBehaviour:
     EndTime: 9.5
     Objs:
     - {fileID: 1050585195}
-  - StartTime: 6.5
-    EndTime: 9.5
-    Objs:
-    - {fileID: 0}
-  - StartTime: 6.5
-    EndTime: 9.5
-    Objs:
-    - {fileID: 1516989193}
-  - StartTime: 6.5
-    EndTime: 9.5
-    Objs:
-    - {fileID: 0}
-  - StartTime: 6.5
-    EndTime: 9.5
-    Objs:
-    - {fileID: 0}
-  - StartTime: 6.5
-    EndTime: 9.5
-    Objs:
-    - {fileID: 0}
-  - StartTime: 6.5
-    EndTime: 9.5
-    Objs:
-    - {fileID: 0}
-  - StartTime: 6.5
-    EndTime: 9.5
-    Objs:
-    - {fileID: 0}
 --- !u!4 &800971664
 Transform:
   m_ObjectHideFlags: 0
