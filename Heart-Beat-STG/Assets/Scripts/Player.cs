@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] float moveSpeed = 10f;
-    [SerializeField] float tolerance = 200f;
+    //[SerializeField] float tolerance = 200f;
 
     private Rigidbody2D rb;
     private BoxCollider2D bc;
@@ -18,7 +18,8 @@ public class Player : MonoBehaviour
     private bool DashBool;
     private float dashSpeed;
     public GameObject dashEffect;
-  
+    public GameObject circle;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -33,17 +34,24 @@ public class Player : MonoBehaviour
         Move();
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, boundary_xMin, boundary_xMax),
         Mathf.Clamp(transform.position.y, boundary_yMin, boundary_yMax));
+
+        Vector3 circlePos = new Vector3(0, 0, 0);
+
         if (Input.GetKeyDown("space"))
         {
             if (Ticker.instance.CheckTouchState() == TouchState.Excellent)
             {
-                Debug.LogError("PlayerDash");
+                //Debug.LogError("PlayerDash");
                 Dash();
                 Instantiate(dashEffect, transform.position, Quaternion.identity);
+                Instantiate(circle, circlePos, Quaternion.identity);
             }
             else if (Ticker.instance.CheckTouchState() == TouchState.Good)
             {
                 //Debug.LogError("PlayerGood");
+                Dash();
+                Instantiate(dashEffect, transform.position, Quaternion.identity);
+                Instantiate(circle, circlePos, Quaternion.identity);
             }
             else
             {

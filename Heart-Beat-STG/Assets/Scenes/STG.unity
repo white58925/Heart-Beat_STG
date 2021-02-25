@@ -364,11 +364,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7cec094c9399de54b80ef80a1e46bc22, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: d96b56a96c49d624096c78c95a9e9086, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -614,18 +614,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeExecuter:
-  - StartTime: 0.5
-    EndTime: 3.5
+  - StartTime: 2
+    EndTime: 5
+    Objs:
+    - {fileID: 909355175}
+  - StartTime: 4
+    EndTime: 7
+    Objs:
+    - {fileID: 1516989193}
+  - StartTime: 3.5
+    EndTime: 6.5
     Objs:
     - {fileID: 1050585195}
-  - StartTime: 1.5
-    EndTime: 4.5
+  - StartTime: 5.5
+    EndTime: 8.5
     Objs:
     - {fileID: 11214506}
-  - StartTime: 6.5
-    EndTime: 9.5
+  - StartTime: 10
+    EndTime: 13
+    Objs:
+    - {fileID: 909355175}
+  - StartTime: 11.5
+    EndTime: 14.5
     Objs:
     - {fileID: 1050585195}
+  - StartTime: 11
+    EndTime: 14
+    Objs:
+    - {fileID: 1516989193}
+  - StartTime: 12.5
+    EndTime: 15.5
+    Objs:
+    - {fileID: 11214506}
 --- !u!4 &800971664
 Transform:
   m_ObjectHideFlags: 0
@@ -658,8 +678,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7d6912d0aa04514b46a9286e44b143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BPM: 60
-  tolerance: 100
+  BPM: 120
+  tolerance: 200
 --- !u!1 &909355175
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,8 +1432,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 1755382720}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1422,80 +1441,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1755382717
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1755382720}
-  - component: {fileID: 1755382719}
-  - component: {fileID: 1755382718}
-  m_Layer: 5
-  m_Name: Border
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1755382718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1755382717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: efa7dd67db549614dbd70b155f9fc8ac, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1755382719
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1755382717}
-  m_CullTransparentMesh: 0
---- !u!224 &1755382720
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1755382717}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.14, y: 1.1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1659748309}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1600, y: 900}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2091036248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,7 +1519,6 @@ GameObject:
   - component: {fileID: 2139941108}
   - component: {fileID: 2139941107}
   - component: {fileID: 2139941110}
-  - component: {fileID: 2139941111}
   - component: {fileID: 2139941112}
   - component: {fileID: 2139941113}
   m_Layer: 8
@@ -1668,19 +1612,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2139941111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139941106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 375b952648e2b574d99c5abbc1d9f8de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cueImage: {fileID: 1755382718}
 --- !u!114 &2139941112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1855,6 +1786,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7694891516828258648, guid: 0d8ade603c09f48c780d3f7111fc5832,
         type: 3}
+      propertyPath: circle
+      value: 
+      objectReference: {fileID: 7677732445780742311, guid: e00c52d2ac8dbed478d9760a6c81ee81,
+        type: 3}
+    - target: {fileID: 7694891516828258648, guid: 0d8ade603c09f48c780d3f7111fc5832,
+        type: 3}
       propertyPath: dashParticle
       value: 
       objectReference: {fileID: 0}
@@ -1866,12 +1803,12 @@ PrefabInstance:
     - target: {fileID: 7694891516828258652, guid: 0d8ade603c09f48c780d3f7111fc5832,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.7
+      value: -11.07
       objectReference: {fileID: 0}
     - target: {fileID: 7694891516828258652, guid: 0d8ade603c09f48c780d3f7111fc5832,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.6
+      value: -6.11
       objectReference: {fileID: 0}
     - target: {fileID: 7694891516828258652, guid: 0d8ade603c09f48c780d3f7111fc5832,
         type: 3}
