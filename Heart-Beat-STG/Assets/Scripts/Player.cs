@@ -39,14 +39,15 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown("space"))
         {
-            if (Ticker.instance.CheckTouchState() == TouchState.Excellent)
+            TouchState touchState = Ticker.instance.CheckTouchState();
+            if (touchState == TouchState.Excellent)
             {
                 //Debug.LogError("PlayerDash");
                 Dash();
                 Instantiate(dashEffect, transform.position, Quaternion.identity);
                 Instantiate(circle, circlePos, Quaternion.identity);
             }
-            else if (Ticker.instance.CheckTouchState() == TouchState.Good)
+            else if (touchState == TouchState.Good)
             {
                 //Debug.LogError("PlayerGood");
                 Dash();
