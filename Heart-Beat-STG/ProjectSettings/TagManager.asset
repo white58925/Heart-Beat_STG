@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
+  - 
   - 
   - 
   - 
@@ -38,6 +38,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1968415513
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Far
+    uniqueID: 4213192369
+    locked: 0
+  - name: Main Layer
+    uniqueID: 500389205
+    locked: 0
+  - name: UI Background
+    uniqueID: 37888847
+    locked: 0
+  - name: UI
+    uniqueID: 3958426459
     locked: 0
