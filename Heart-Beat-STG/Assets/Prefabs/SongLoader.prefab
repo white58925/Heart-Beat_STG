@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2324466905335604451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2324466905335604449}
+  - component: {fileID: 2324466905335604448}
+  m_Layer: 0
+  m_Name: SongLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2324466905335604449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2324466905335604451}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2324466905335604448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2324466905335604451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3dfab3309d58c04ca2f7096f9fb82ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  songIndex: 0
+  songObjects:
+  - {fileID: 11400000, guid: a76215f831405f642b8b30dc2db69c1b, type: 2}
+  - {fileID: 11400000, guid: c3073601a8f54944faf8e67d0207fc71, type: 2}
+  - {fileID: 11400000, guid: 5afd83d0f2aac844190b6b54b6237879, type: 2}
+  - {fileID: 11400000, guid: c4d380165ad64f94483c7aa4759b74ea, type: 2}
+  - {fileID: 11400000, guid: 9901c0b1c0fcda349a2b8fe18ccff70a, type: 2}
+  - {fileID: 11400000, guid: 5e4253aa7f2a6e544b7cabb63ab47f5d, type: 2}
+  - {fileID: 11400000, guid: 2a9b9a772d763bd4e8300f602d1c29b0, type: 2}
+  - {fileID: 11400000, guid: 77a31d83be5f3e24eb8c52d803b08626, type: 2}
+  - {fileID: 11400000, guid: 1d7a3303e1b6d5d499ca8d35b584438a, type: 2}
+  currentSongType: 0
+  activeSong: {fileID: 0}
+  test: []

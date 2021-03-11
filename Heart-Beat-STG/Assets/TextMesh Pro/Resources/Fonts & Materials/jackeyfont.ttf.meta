@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 39ec787c3b1f3d84a95c3efae3c97375
+guid: 27b0b48f974661f4fac1ff5a0649aee2
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -11,7 +11,8 @@ TrueTypeFontImporter:
   fontName: JackeyFont
   fontNames:
   - JackeyFont
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3d1ea488e69b97a40b378d2703ef2e55, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
