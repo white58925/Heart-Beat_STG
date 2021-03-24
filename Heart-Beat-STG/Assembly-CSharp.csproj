@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2FE29036-CAA9-CC8D-D342-B1FA41BB333A}</ProjectGuid>
+    <ProjectGuid>{80178738-65E7-86B3-BEF8-F204936819BB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -88,15 +88,52 @@
     <Compile Include="Assets\Scripts\TappableObject.cs" />
     <Compile Include="Assets\Scripts\TriggerableObject.cs" />
     <Compile Include="Assets\Scripts\syncedAnimation.cs" />
+    <Compile Include="Assets\Uduino\Examples\Advanced\Arduino Mega\MegaReadWrite.cs" />
+    <Compile Include="Assets\Uduino\Examples\Advanced\BoardType\ChangeBoardType.cs" />
+    <Compile Include="Assets\Uduino\Examples\Advanced\Bundle\Bundle.cs" />
+    <Compile Include="Assets\Uduino\Examples\Advanced\ButtonTrigger\ButtonTrigger.cs" />
+    <Compile Include="Assets\Uduino\Examples\Advanced\EncoderLibrary\EncoderLibrary.cs" />
+    <Compile Include="Assets\Uduino\Examples\Advanced\LedIntensity\SendLedIntensity.cs" />
+    <Compile Include="Assets\Uduino\Examples\Advanced\MultipleArduino\MultipleArduino.cs" />
+    <Compile Include="Assets\Uduino\Examples\Advanced\MultipleArduino\MultipleArduino2.cs" />
+    <Compile Include="Assets\Uduino\Examples\Advanced\OneLineRead\OneLineRead.cs" />
+    <Compile Include="Assets\Uduino\Examples\Advanced\ReadSensor\ReadSensor.cs" />
+    <Compile Include="Assets\Uduino\Examples\Advanced\SendCommandToArduino\SendCommandToArduino.cs" />
+    <Compile Include="Assets\Uduino\Examples\Advanced\ServoOptimized\ServoOptimized.cs" />
+    <Compile Include="Assets\Uduino\Examples\Basic\AnalogRead\AnalogRead.cs" />
+    <Compile Include="Assets\Uduino\Examples\Basic\AnalogWrite\AnalogWrite.cs" />
+    <Compile Include="Assets\Uduino\Examples\Basic\BlinkLed\BlinkLed.cs" />
+    <Compile Include="Assets\Uduino\Examples\Basic\DigitalReadButton\DigitalReadButton.cs" />
+    <Compile Include="Assets\Uduino\Examples\Basic\DigitalReadButton\MultipleButtons\MultipleButtons.cs" />
+    <Compile Include="Assets\Uduino\Examples\Basic\Events\UduinoEventsReceiver.cs" />
+    <Compile Include="Assets\Uduino\Examples\Basic\FadeInOut\FadeInOut.cs" />
+    <Compile Include="Assets\Uduino\Examples\Basic\ReadWrite\ReadWrite.cs" />
+    <Compile Include="Assets\Uduino\Examples\Basic\Servo\Servo.cs" />
+    <Compile Include="Assets\Uduino\Examples\Basic\SimpleUduino.cs" />
+    <Compile Include="Assets\Uduino\Scripts\Boards\ArduinoBoardType.cs" />
+    <Compile Include="Assets\Uduino\Scripts\Boards\DesktopSerial\UduinoConnection_DesktopSerial.cs" />
+    <Compile Include="Assets\Uduino\Scripts\Boards\DesktopSerial\UduinoDevice_DesktopSerial.cs" />
+    <Compile Include="Assets\Uduino\Scripts\Boards\UduinoConnection.cs" />
+    <Compile Include="Assets\Uduino\Scripts\Boards\UduinoDevice.cs" />
+    <Compile Include="Assets\Uduino\Scripts\Boards\UduinoPin.cs" />
+    <Compile Include="Assets\Uduino\Scripts\Extra\Interface\Resources\Bluetooth\UduinoInterface_Bluetooth.cs" />
+    <Compile Include="Assets\Uduino\Scripts\Extra\Interface\UduinoInterface.cs" />
+    <Compile Include="Assets\Uduino\Scripts\Extra\Interface\UduinoInterface_Serial.cs" />
+    <Compile Include="Assets\Uduino\Scripts\Extra\Interface\UduinoInterface_Wifi.cs" />
+    <Compile Include="Assets\Uduino\Scripts\Extra\SimpleJSON.cs" />
+    <Compile Include="Assets\Uduino\Scripts\Extra\UduinoDebug.cs" />
+    <Compile Include="Assets\Uduino\Scripts\Extra\UduinoDebugCanvas.cs" />
+    <Compile Include="Assets\Uduino\Scripts\UduinoManager.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Uduino\Arduino\libraries\Uduino\keywords.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Uduino\ReadMe.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -289,13 +326,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -643,76 +680,76 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Monetization">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>D:/Repos/Unity2D/Heart_Beats/Heart Beats/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+      <HintPath>D:/Repos/Unity2D/Heart-Beat-STG/Heart-Beat-STG/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
