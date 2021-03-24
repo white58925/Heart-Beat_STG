@@ -38,8 +38,10 @@ public class Conductor : MonoBehaviour {
 
     //UI
     public Text loopText;
+    public TextMeshPro getReadyText;
     public TextMeshPro announcementText;
-    public Animator announcementAnimator;
+    public Animator getReadyAnimator;
+    public Animator anouncementAnimator;
 
     //static note information
     public float timeSig;
@@ -211,7 +213,7 @@ public class Conductor : MonoBehaviour {
     IEnumerator CountDown ()
     {
         yield return new WaitForSeconds(1f);
-        announcementAnimator.SetTrigger("getReady");
+        getReadyAnimator.SetTrigger("getReady");
         for (int i=0; i<1; i++)
         {
             //Debug.Log("Countdown " + i.ToString());
@@ -226,8 +228,10 @@ public class Conductor : MonoBehaviour {
     {
         //Change the middle button to a back button
         //Pop up a 'Complete' announcement
-        announcementText.text = "Complete";
-        announcementAnimator.SetTrigger("Complete");
+        getReadyText.text = "同歩完成";
+        getReadyAnimator.SetTrigger("Complete");
+        announcementText.text = "「我還没準備好和他道別...」";
+        anouncementAnimator.SetTrigger("Complete");
     }
 
     public void StopMetronome()
