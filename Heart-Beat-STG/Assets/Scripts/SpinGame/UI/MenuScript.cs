@@ -20,8 +20,8 @@ public class MenuScript : MonoBehaviour
     {
         animator.SetTrigger("Activate");
         menuActive = true;
-        foreach (MenuButton menuButton in menuButtons)
-            menuButton.ResetButton();
+        //foreach (MenuButton menuButton in menuButtons)
+            //menuButton.ResetButton();
     }
 
     public void DeactivateMenu()
