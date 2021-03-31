@@ -67,9 +67,11 @@ public class UIController : MonoBehaviour
     }
     public void UIButtonClick(UIButton uiButtonType)
     {
+        Debug.LogError(uiButtonType + "click");
         switch(uiButtonType)
         {
             case UIButton.Start:
+               
                 break;
             case UIButton.Option:
                 break;

@@ -70,9 +70,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c305f3ed8fe1614d9cc9fa7eb37d455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuButtonController: {fileID: 6721156441332912842}
   animator: {fileID: 6721156439909354530}
-  thisIndex: 0
+  uiButtonType: 0
 --- !u!1 &6721156439945398806
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,9 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c305f3ed8fe1614d9cc9fa7eb37d455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuButtonController: {fileID: 6721156441332912842}
   animator: {fileID: 6721156439945398804}
-  thisIndex: 1
+  uiButtonType: 1
 --- !u!1 &6721156440013664041
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,9 +965,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23a7a6d72456a674380b244e43927c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
-  keyDown: 0
   maxIndex: 2
+  characterSelect: {fileID: 0}
+  UIPrefab: {fileID: 0}
 --- !u!1 &6721156441376038110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,9 +1038,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c305f3ed8fe1614d9cc9fa7eb37d455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuButtonController: {fileID: 6721156441332912842}
   animator: {fileID: 6721156441376038108}
-  thisIndex: 2
+  uiButtonType: 2
 --- !u!1 &6721156441379492400
 GameObject:
   m_ObjectHideFlags: 0
