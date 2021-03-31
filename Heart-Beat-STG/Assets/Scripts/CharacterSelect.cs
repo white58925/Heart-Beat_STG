@@ -23,7 +23,7 @@ public class CharacterSelect : MonoBehaviour
         }
     }
 
-    public void ChangeCar(int change)
+    public void ChangeChar(int change)
     {
         currentChar += change;
         SelectChar(currentChar);
