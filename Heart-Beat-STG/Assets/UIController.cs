@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum UIButton
 {
@@ -12,9 +13,12 @@ public enum UIButton
 public class UIController : MonoBehaviour
 {
     [SerializeField] int maxIndex;
+    [SerializeField] CharacterSelect characterSelect;
     [Header("GameObject")]
-    [SerializeField] GameObject characterSelect;
-    [SerializeField] GameObject UIPrefab;
+    [SerializeField] GameObject mainMenuGameObject;
+    [SerializeField] GameObject characterSelectGameObject;
+    [SerializeField] GameObject uiPrefabGameObject;
+
     public static UIController Instance;
     private int index;
     private bool keyDown = false;
@@ -64,14 +68,34 @@ public class UIController : MonoBehaviour
         {
             keyDown = false;
         }
+        if(!mainMenuGameObject.activeSelf)
+        {
+            if(Input.GetKeyDown(KeyCode.Space))
+            {
+                Debug.LogError(characterSelect.CurrentChar + " Chracter Start Game");
+                SongLoader.instance.LoadScene(1, SongType.Dance);
+                SceneManager.LoadScene(1);
+
+
+            }else if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                characterSelect.ChangeChar(1);
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                characterSelect.ChangeChar(-1);
+            }
+
+        }
     }
     public void UIButtonClick(UIButton uiButtonType)
     {
-        Debug.LogError(uiButtonType + "click");
         switch(uiButtonType)
         {
             case UIButton.Start:
-               
+                mainMenuGameObject.SetActive(false);
+                characterSelectGameObject.SetActive(true);
+                uiPrefabGameObject.SetActive(true);
                 break;
             case UIButton.Option:
                 break;

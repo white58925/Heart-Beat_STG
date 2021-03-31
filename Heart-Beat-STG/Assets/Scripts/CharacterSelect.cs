@@ -6,7 +6,12 @@ public class CharacterSelect : MonoBehaviour
     [SerializeField] private Button previousButton;
     [SerializeField] private Button nextButton;
     private int currentChar;
+    private int characterCount = 3;
 
+    public int CurrentChar
+    {
+        get { return currentChar; }
+    }
     private void Awake()
     {
         SelectChar(0);
@@ -26,6 +31,7 @@ public class CharacterSelect : MonoBehaviour
     public void ChangeChar(int change)
     {
         currentChar += change;
+        currentChar = currentChar == characterCount ? 0 : currentChar == -1 ? characterCount - 1 : currentChar;
         SelectChar(currentChar);
     }
 }
