@@ -5,14 +5,14 @@ public class CharacterSelect : MonoBehaviour
 {
     [SerializeField] private Button previousButton;
     [SerializeField] private Button nextButton;
-    private int currentCar;
+    private int currentChar;
 
     private void Awake()
     {
-        SelectCar(0);
+        SelectChar(0);
     }
 
-    private void SelectCar(int index)
+    private void SelectChar(int index)
     {
         previousButton.interactable = (index != 0);
         nextButton.interactable = (index != transform.childCount - 1);
@@ -25,7 +25,7 @@ public class CharacterSelect : MonoBehaviour
 
     public void ChangeCar(int change)
     {
-        currentCar += change;
-        SelectCar(currentCar);
+        currentChar += change;
+        SelectChar(currentChar);
     }
 }
