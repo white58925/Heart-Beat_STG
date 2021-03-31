@@ -32,7 +32,10 @@ public class UIController : MonoBehaviour
     {
         Instance = this;
     }
-
+    private void Start()
+    {
+        EventManager.StartListening("Arduino", ArduinoButtonClick);
+    }
     void Update()
     {
         if (Input.GetAxis("Vertical") != 0)
@@ -72,12 +75,9 @@ public class UIController : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.Space))
             {
-                Debug.LogError(characterSelect.CurrentChar + " Chracter Start Game");
-                SongLoader.instance.LoadScene(1, SongType.Dance);
-                SceneManager.LoadScene(1);
-
-
-            }else if (Input.GetKeyDown(KeyCode.RightArrow))
+                StartGame();
+            }
+            else if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 characterSelect.ChangeChar(1);
             }
@@ -102,6 +102,23 @@ public class UIController : MonoBehaviour
             case UIButton.Exit:
                 Application.Quit();
                 break;
+        }
+    }
+    public void StartGame()
+    {
+        Debug.LogError(characterSelect.CurrentChar + " Chracter Start Game");
+        SongLoader.instance.LoadScene(1, SongType.Dance);
+        SceneManager.LoadScene(1);
+    }
+    public void ArduinoButtonClick()
+    {
+        if(mainMenuGameObject.activeSelf)
+        {
+            UIButtonClick((UIButton)index);
+        }
+        else
+        {
+            StartGame();
         }
     }
 }

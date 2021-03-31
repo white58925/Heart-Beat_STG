@@ -7,22 +7,23 @@ using Uduino;
 public class UdinoController : MonoBehaviour
 {
     int lastbuttonValue = 1;
+    int pinIndex = 9;
     void Start()
     {
-        UduinoManager.Instance.pinMode(8, PinMode.Input_pullup);
-        //StartCoroutine(Tap());
+        UduinoManager.Instance.pinMode(pinIndex, PinMode.Input_pullup);
+        StartCoroutine(Tap());
     }
     IEnumerator Tap()
     {
-        int buttonValue = UduinoManager.Instance.digitalRead(8);
-        while(true)
+        int buttonValue = UduinoManager.Instance.digitalRead(pinIndex);
+        while (true)
         {
             if (lastbuttonValue == 1 && buttonValue == 0)
             {
                 lastbuttonValue = 0;
                 Debug.LogError("last" + lastbuttonValue);
-                EventManager.TriggerEvent("UpArrow");
-                yield return new WaitForSeconds(0.5f);   
+                //EventManager.TriggerEvent("UpArrow");
+                yield return new WaitForSeconds(0.5f);
             }
             else
             {
@@ -32,33 +33,23 @@ public class UdinoController : MonoBehaviour
         }
         yield return null;
     }
-    // Update is called once per frame
+
     void Update()
     {
-        int buttonValue = UduinoManager.Instance.digitalRead(8);
+        //int buttonValue = UduinoManager.Instance.digitalRead(8);
 
-        if (lastbuttonValue != buttonValue)
-        {
-            if(buttonValue == 0)
-            {
-                EventManager.TriggerEvent("UpArrow");
-                lastbuttonValue = buttonValue;
-            }
-            else
-            {
-                lastbuttonValue = buttonValue;
-            }
-        }
-
-        if (buttonValue == 0)
-        {
-            
-            Debug.LogError("0");
-            
-        }
-        else
-        {
-            Debug.LogError("1");
-        }
+        //if (lastbuttonValue != buttonValue)
+        //{
+        //    if(buttonValue == 0)
+        //    {
+        //        Debug.LogError("AruimoButonCLick");
+        //        EventManager.TriggerEvent("Arduino");
+        //        lastbuttonValue = buttonValue;
+        //    }
+        //    else
+        //    {
+        //        lastbuttonValue = buttonValue;
+        //    }
+        //}
     }
 }
