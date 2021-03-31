@@ -2,19 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MenuButtonController : MonoBehaviour
+public enum UIButton
 {
-    public int index;
-    [SerializeField] bool keyDown;
-    [SerializeField] int maxIndex;
+    Start = 0,
+    Option = 1,
+    Exit = 2
+}
 
-    // Start is called before the first frame update
-    void Start()
+public class UIController : MonoBehaviour
+{
+    [SerializeField] int maxIndex;
+    [Header("GameObject")]
+    [SerializeField] GameObject characterSelect;
+    [SerializeField] GameObject UIPrefab;
+    public static UIController Instance;
+    private int index;
+    private bool keyDown = false;
+    
+    public int Index
     {
-        
+        get { return index; }
     }
 
-    // Update is called once per frame
+    void Awake()
+    {
+        Instance = this;
+    }
+
     void Update()
     {
         if (Input.GetAxis("Vertical") != 0)
@@ -49,6 +63,19 @@ public class MenuButtonController : MonoBehaviour
         else
         {
             keyDown = false;
+        }
+    }
+    public void UIButtonClick(UIButton uiButtonType)
+    {
+        switch(uiButtonType)
+        {
+            case UIButton.Start:
+                break;
+            case UIButton.Option:
+                break;
+            case UIButton.Exit:
+                Application.Quit();
+                break;
         }
     }
 }
