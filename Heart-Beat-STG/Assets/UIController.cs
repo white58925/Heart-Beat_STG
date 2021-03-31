@@ -9,7 +9,11 @@ public enum UIButton
     Option = 1,
     Exit = 2
 }
-
+public enum UIState
+{
+    MainMenu = 0,
+    CharacterSelect = 1
+}
 public class UIController : MonoBehaviour
 {
     [SerializeField] int maxIndex;
@@ -20,21 +24,23 @@ public class UIController : MonoBehaviour
     [SerializeField] GameObject uiPrefabGameObject;
 
     public static UIController Instance;
-    private int index;
+    public int index;
+    public UIState uiState = UIState.MainMenu;
     private bool keyDown = false;
+    private bool isGameStarted = false;
     
-    public int Index
-    {
-        get { return index; }
-    }
-
     void Awake()
     {
         Instance = this;
+        PlayerPrefs.SetInt("Scene", 0);
     }
     private void Start()
     {
         EventManager.StartListening("Arduino", ArduinoButtonClick);
+    }
+    private void OnDestroy()
+    {
+        EventManager.StopListening("Arduino", ArduinoButtonClick);
     }
     void Update()
     {
@@ -92,7 +98,8 @@ public class UIController : MonoBehaviour
     {
         switch(uiButtonType)
         {
-            case UIButton.Start:
+            case UIButton.Start:               
+                uiState = UIState.CharacterSelect;
                 mainMenuGameObject.SetActive(false);
                 characterSelectGameObject.SetActive(true);
                 uiPrefabGameObject.SetActive(true);
@@ -106,6 +113,7 @@ public class UIController : MonoBehaviour
     }
     public void StartGame()
     {
+        PlayerPrefs.SetInt("Scene", 1);
         Debug.LogError(characterSelect.CurrentChar + " Chracter Start Game");
         SongLoader.instance.LoadScene(1, SongType.Dance);
         SceneManager.LoadScene(1);
@@ -120,5 +128,9 @@ public class UIController : MonoBehaviour
         {
             StartGame();
         }
+    }
+    public void SetCharacterSelect(int value)
+    {
+        characterSelect.SetChar(value);
     }
 }

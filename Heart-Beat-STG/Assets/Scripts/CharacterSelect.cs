@@ -34,4 +34,9 @@ public class CharacterSelect : MonoBehaviour
         currentChar = currentChar == characterCount ? 0 : currentChar == -1 ? characterCount - 1 : currentChar;
         SelectChar(currentChar);
     }
+    public void SetChar(int value)
+    {
+        currentChar = value;
+        SelectChar(currentChar);
+    }
 }

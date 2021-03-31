@@ -10,7 +10,7 @@ public class MenuButtonAnimation : MonoBehaviour
 
     void Update()
     {
-        if (UIController.Instance.Index == (int)uiButtonType)
+        if (UIController.Instance.index == (int)uiButtonType)
         {
             animator.SetBool("selected", true);
             if (Input.GetAxis("Submit") == 1)
