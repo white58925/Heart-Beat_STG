@@ -110,6 +110,7 @@ public class SequenceController : MonoBehaviour {
     public void CompleteRing()
     {
         //Debug.Log("checking for full completion");
+        Conductor.instance.musicTargetValue = Random.Range(0, 670);
         bool ringDone = true;
         foreach (int index in activeRings)
         {
@@ -122,7 +123,7 @@ public class SequenceController : MonoBehaviour {
             //Set the volume up on each ring's track and trigger its complete animations
             foreach (int index in activeRings)
             {
-                Conductor.instance.loops[index].volume = 1;
+                Conductor.instance.loops[index].volume = Conductor.instance.musicVolume;
                 ringParents[index].CompleteRing();
             }
 
