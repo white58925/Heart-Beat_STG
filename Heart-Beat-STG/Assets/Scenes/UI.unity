@@ -627,7 +627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7f8d16f4e6f6433b8830f92e8d7f2ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxIndex: 0
+  maxIndex: 2
   characterSelect: {fileID: 2052026422}
   mainMenuGameObject: {fileID: 1498701509}
   characterSelectGameObject: {fileID: 298178784}
