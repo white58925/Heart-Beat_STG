@@ -19,7 +19,7 @@ MonoBehaviour:
   simultaneousRings: 1
   rings:
   - notesToTelegraph: 2
-    ringKeycode: 275
+    ringKeycode: 273
     ringTrack: {fileID: 8300000, guid: cdf23aff0f0d9d643a3286ddff331c0f, type: 3}
     ringSample: {fileID: 8300000, guid: b9de7e93cb84c8441acfd2d2817a4529, type: 3}
     useMelody: 0
@@ -34,7 +34,7 @@ MonoBehaviour:
     - 16
     melodyNotes: []
   - notesToTelegraph: 3
-    ringKeycode: 274
+    ringKeycode: 273
     ringTrack: {fileID: 8300000, guid: b3949cb6ae82b88418031867ddfa062c, type: 3}
     ringSample: {fileID: 8300000, guid: edda626d75799f241a67f99ae7102a82, type: 3}
     useMelody: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
     - 13
     melodyNotes: []
   - notesToTelegraph: 2
-    ringKeycode: 276
+    ringKeycode: 273
     ringTrack: {fileID: 8300000, guid: a536615053a5fc040886da98481d2566, type: 3}
     ringSample: {fileID: 8300000, guid: dfc5e79a5d177e04682df99e59b5e8b5, type: 3}
     useMelody: 1

@@ -9,6 +9,7 @@ public class Conductor : MonoBehaviour {
     public float noiseVolume = 0f;
     public float musicVolume = 1f;
     public int musicTargetValue = 100;
+    public GameObject dialog;
     //Static song information
     public float beatTempo;
     public float secPerBeat;

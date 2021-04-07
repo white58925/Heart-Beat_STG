@@ -3732,6 +3732,7 @@ MonoBehaviour:
   noiseVolume: 0
   musicVolume: 1
   musicTargetValue: 100
+  dialog: {fileID: 0}
   beatTempo: 120
   secPerBeat: 0
   offestInBeats: 4

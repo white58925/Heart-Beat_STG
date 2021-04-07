@@ -44,11 +44,11 @@ public class UIController : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetAxis("Vertical") != 0)
+        if (Input.GetAxis("Horizontal") != 0)
         {
             if (!keyDown)
             {
-                if (Input.GetAxis("Vertical") < 0)
+                if (Input.GetAxis("Horizontal") > 0)
                 {
                     if (index < maxIndex)
                     {
@@ -59,7 +59,7 @@ public class UIController : MonoBehaviour
                         index = 0;
                     }
                 }
-                else if (Input.GetAxis("Vertical") > 0)
+                else if (Input.GetAxis("Horizontal") < 0)
                 {
                     if (index > 0)
                     {
