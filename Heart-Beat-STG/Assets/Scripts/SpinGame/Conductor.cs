@@ -6,12 +6,16 @@ using TMPro;
 
 public class Conductor : MonoBehaviour {
 
+    public float noiseVolume = 0f;
+    public float musicVolume = 1f;
+    public int musicTargetValue = 100;
     //Static song information
     public float beatTempo;
     public float secPerBeat;
     public float offestInBeats = 4;
     private float offsetToFirstBeat;
     public float startingPosition;
+    public AudioSource noise;
     public AudioSource musicSource;
     public AudioSource[] loops;
     public AudioListener audioListener;
@@ -83,6 +87,8 @@ public class Conductor : MonoBehaviour {
         loopPosInBeats = songPosInBeats + 1;
         loopPosInAnalog = (loopPosInBeats - 1) / timeSig;
         //Run the countdown preparing to start
+        musicTargetValue = Random.Range(0, 670);
+        SetNoiseAndMusicVolume();
         StartCoroutine(CountDown());
     }
 
@@ -123,8 +129,15 @@ public class Conductor : MonoBehaviour {
         loopText.text = loopPosInBeats.ToString("#.0");
         loopPosInAnalog = (loopPosInBeats-1) / timeSig;
 
+        SetNoiseAndMusicVolume();
     }
-
+    public void SetNoiseAndMusicVolume()
+    {
+        noiseVolume = (float)Mathf.Abs(UdinoController.analogRotationValue - musicTargetValue) / 700f;
+        musicVolume = 1 - noiseVolume;
+        noise.volume = noiseVolume;
+        musicSource.volume = musicVolume;
+    }
     public void Resume()
     {
         PauseCanvas.SetActive(false);
@@ -238,5 +251,8 @@ public class Conductor : MonoBehaviour {
     {
         musicSource.volume = 0;
     }
-    
+    public void SetMetronomeVolume(float volume)
+    {
+        musicSource.volume = volume;
+    }
 }

@@ -624,10 +624,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 503461132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23a7a6d72456a674380b244e43927c95, type: 3}
+  m_Script: {fileID: 11500000, guid: a7f8d16f4e6f6433b8830f92e8d7f2ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxIndex: 2
+  maxIndex: 0
   characterSelect: {fileID: 2052026422}
   mainMenuGameObject: {fileID: 1498701509}
   characterSelectGameObject: {fileID: 298178784}

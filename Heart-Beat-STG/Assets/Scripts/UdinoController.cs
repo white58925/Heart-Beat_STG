@@ -13,7 +13,7 @@ public class UdinoController : MonoBehaviour
 
     int analogIndex = 0;
     int lastAnalogIndex = 0;
-    bool isWait = false;
+    public static int analogRotationValue;
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -28,33 +28,31 @@ public class UdinoController : MonoBehaviour
     }
     void Update()
     {
-        if(!isWait)
+        int buttonValue = UduinoManager.Instance.digitalRead(pinIndex);
+        if(buttonValue == 0 && lastbuttonValue == 1)
         {
-            int buttonValue = UduinoManager.Instance.digitalRead(pinIndex);
-            if(buttonValue == 0 && lastbuttonValue == 1)
+            if(PlayerPrefs.GetInt("Scene", 0) == 0)
             {
-                if(PlayerPrefs.GetInt("Scene", 0) == 0)
-                {
-                    EventManager.TriggerEvent("Arduino");
-                }
-                else
-                {
-                    EventManager.TriggerEvent("UpArrow");
-                }
-                lastbuttonValue = 0;
-                //StartCoroutine(WaitSeconds(0.5f));
+                EventManager.TriggerEvent("Arduino");
             }
-            else if (buttonValue == 1 && lastbuttonValue == 0)
+            else
             {
-                lastbuttonValue = 1;
+                EventManager.TriggerEvent("UpArrow");
             }
+            lastbuttonValue = 0;
+            //StartCoroutine(WaitSeconds(0.5f));
+        }
+        else if (buttonValue == 1 && lastbuttonValue == 0)
+        {
+            lastbuttonValue = 1;
         }
         int analogValue = UduinoManager.Instance.analogRead(AnalogPin.A0);
         analogIndex = GetAnaolgIndex(analogValue);
-        if(lastAnalogIndex != analogIndex)
+        analogRotationValue = analogValue;
+        if (lastAnalogIndex != analogIndex)
         {
             lastAnalogIndex = analogIndex;
-            if (PlayerPrefs.GetInt("Scene", 0) == 0)
+            if (PlayerPrefs.GetInt("Scene", 0) == 0 && UIController.Instance != null)
             {
                 switch (UIController.Instance.uiState)
                 {
@@ -65,6 +63,10 @@ public class UdinoController : MonoBehaviour
                         UIController.Instance.SetCharacterSelect(analogIndex);
                         break;
                 }
+            }
+            else
+            {
+                analogRotationValue = analogValue;
             }
         }
         
@@ -80,12 +82,5 @@ public class UdinoController : MonoBehaviour
             return 1;
         }
         return 2;
-    }
-    
-    IEnumerator WaitSeconds(float waitTime)
-    {
-        isWait = true;
-        yield return new WaitForSeconds(waitTime);
-        isWait = false;
     }
 }

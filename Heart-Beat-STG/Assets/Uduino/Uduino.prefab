@@ -46,10 +46,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pins:
   - arduinoName: uduinoBoard
-    pinMode: 0
-    prevPinMode: 0
+    pinMode: 3
+    prevPinMode: 3
     currentPin: 9
     prevPin: 9
+    isEditorPin: 1
+    sendValue: 0
+    prevSendValue: 0
+    lastReadValue: 0
+  - arduinoName: uduinoBoard
+    pinMode: 2
+    prevPinMode: 2
+    currentPin: 14
+    prevPin: 14
     isEditorPin: 1
     sendValue: 0
     prevSendValue: 0
