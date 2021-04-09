@@ -797,12 +797,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2324466905335604448, guid: 9592fba184a33ff418b4208af0cfa1fc,
-        type: 3}
-      propertyPath: activeSong
-      value: 
-      objectReference: {fileID: 11400000, guid: 2155281d562844af09e45580ff8df193,
-        type: 2}
     - target: {fileID: 2324466905335604449, guid: 9592fba184a33ff418b4208af0cfa1fc,
         type: 3}
       propertyPath: m_RootOrder

@@ -55,5 +55,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 77a31d83be5f3e24eb8c52d803b08626, type: 2}
   - {fileID: 11400000, guid: 1d7a3303e1b6d5d499ca8d35b584438a, type: 2}
   currentSongType: 0
-  activeSong: {fileID: 0}
+  activeSong: {fileID: 11400000, guid: 2155281d562844af09e45580ff8df193, type: 2}
   test: []

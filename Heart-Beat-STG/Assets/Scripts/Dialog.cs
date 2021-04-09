@@ -13,12 +13,6 @@ public class Dialog : MonoBehaviour
     private void Start()
     {
         StartCoroutine(Type());
-        StartCoroutine(NextSentence());
-    }
-
-    private void Update()
-    {     
-        NextSentence();
     }
 
     IEnumerator Type()
@@ -30,9 +24,8 @@ public class Dialog : MonoBehaviour
         }
     }
 
-    IEnumerator NextSentence()
+    public void NextSentence()
     {
-        yield return new WaitForSeconds(2);
         if (index < sentences.Length - 1)
         {
             index++;
