@@ -63,6 +63,15 @@ MonoBehaviour:
     sendValue: 0
     prevSendValue: 0
     lastReadValue: 0
+  - arduinoName: uduinoBoard
+    pinMode: 3
+    prevPinMode: 3
+    currentPin: 6
+    prevPin: 6
+    isEditorPin: 1
+    sendValue: 0
+    prevSendValue: 0
+    lastReadValue: 0
   activeExtentionsMap:
     keys:
     - UduinoDevice_DesktopSerial

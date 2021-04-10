@@ -5,15 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class UdinoController : MonoBehaviour
 {
-    int lastbuttonValue = 1;
-    int pinIndex = 9;
-
+    int lastPin9ButtonValue = 1;
+    int lastPin6ButtonValue = 0; 
     int maxAnalogValue = 670;
     int analogThreshold = 1;
-
     int analogIndex = 0;
     int lastAnalogIndex = 0;
     public static int analogRotationValue;
+
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -28,10 +27,16 @@ public class UdinoController : MonoBehaviour
     }
     void Update()
     {
-        int buttonValue = UduinoManager.Instance.digitalRead(pinIndex);
-        if(buttonValue == 0 && lastbuttonValue == 1)
+        CheckButton9Pin();
+        CheckButton6Pin();
+        CheckAnalogValue();    
+    }
+    private void CheckButton9Pin()
+    {
+        int buttonValue = UduinoManager.Instance.digitalRead(9);
+        if (buttonValue == 0 && lastPin9ButtonValue == 1)
         {
-            if(PlayerPrefs.GetInt("Scene", 0) == 0)
+            if (PlayerPrefs.GetInt("Scene", 0) == 0)
             {
                 EventManager.TriggerEvent("Arduino");
             }
@@ -39,13 +44,29 @@ public class UdinoController : MonoBehaviour
             {
                 EventManager.TriggerEvent("UpArrow");
             }
-            lastbuttonValue = 0;
-            //StartCoroutine(WaitSeconds(0.5f));
+            lastPin9ButtonValue = 0;
         }
-        else if (buttonValue == 1 && lastbuttonValue == 0)
+        else if (buttonValue == 1 && lastPin9ButtonValue == 0)
         {
-            lastbuttonValue = 1;
+            lastPin9ButtonValue = 1;
         }
+    }
+    private void CheckButton6Pin()
+    {
+        int buttonValue = UduinoManager.Instance.digitalRead(6);
+        if (buttonValue == 0 && lastPin6ButtonValue == 1)
+        {
+            EventManager.TriggerEvent("assistStart");
+            lastPin6ButtonValue = 0;
+        }
+        else if (buttonValue == 1 && lastPin6ButtonValue == 0)
+        {
+            EventManager.TriggerEvent("assistStop");
+            lastPin6ButtonValue = 1;
+        }
+    }
+    private void CheckAnalogValue()
+    {
         int analogValue = UduinoManager.Instance.analogRead(AnalogPin.A0);
         analogIndex = GetAnaolgIndex(analogValue);
         analogRotationValue = analogValue;
@@ -69,7 +90,6 @@ public class UdinoController : MonoBehaviour
                 analogRotationValue = analogValue;
             }
         }
-        
     }
     private int GetAnaolgIndex(int value)
     {
@@ -83,4 +103,5 @@ public class UdinoController : MonoBehaviour
         }
         return 2;
     }
+
 }
