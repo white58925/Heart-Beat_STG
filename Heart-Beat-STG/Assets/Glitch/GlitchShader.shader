@@ -70,9 +70,6 @@ SubShader {
 
 			color += fixed4(redcolor.r, redcolor.b, redcolor.g, 1) *  step(filterRadius, -0.001);
 			color *= 1 - 0.5 * step(filterRadius, -0.001);
-
-			color += fixed4(greencolor.g, greencolor.b, greencolor.r, 1) *  step(0.001, filterRadius);
-			color *= 1 - 0.5 * step(0.001, filterRadius);
 			
 			return color;
 		}
