@@ -19,6 +19,7 @@ public class CharacterSelect : MonoBehaviour
 
     private void SelectChar(int index)
     {
+        
         previousButton.interactable = (index != 0);
         nextButton.interactable = (index != transform.childCount - 1);
 
