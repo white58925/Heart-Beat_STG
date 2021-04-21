@@ -68,6 +68,7 @@ public class UdinoController : MonoBehaviour
     private void CheckAnalogValue()
     {
         int analogValue = UduinoManager.Instance.analogRead(AnalogPin.A0);
+        //Debug.LogError(analogValue);
         analogIndex = GetAnaolgIndex(analogValue);
         analogRotationValue = analogValue;
         if (lastAnalogIndex != analogIndex)

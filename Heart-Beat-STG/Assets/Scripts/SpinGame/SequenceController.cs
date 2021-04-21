@@ -110,7 +110,8 @@ public class SequenceController : MonoBehaviour {
     public void CompleteRing()
     {
         //Debug.Log("checking for full completion");
-        Conductor.instance.musicTargetValue = Random.Range(0, 670);
+        int random = (Random.value > 0.5f ? 1 : -1) * Random.Range(80, 120);
+        Conductor.instance.musicTargetValue += random;
         bool ringDone = true;
         foreach (int index in activeRings)
         {

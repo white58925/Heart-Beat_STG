@@ -88,7 +88,7 @@ public class Conductor : MonoBehaviour {
         loopPosInBeats = songPosInBeats + 1;
         loopPosInAnalog = (loopPosInBeats - 1) / timeSig;
         //Run the countdown preparing to start
-        musicTargetValue = Random.Range(0, 670);
+        musicTargetValue = Random.Range(0, 200);
         SetNoiseAndMusicVolume();
         StartCoroutine(CountDown());
     }
@@ -134,7 +134,8 @@ public class Conductor : MonoBehaviour {
     }
     public void SetNoiseAndMusicVolume()
     {
-        noiseVolume = (float)Mathf.Abs(UdinoController.analogRotationValue - musicTargetValue) / 700f;
+        noiseVolume = (float)Mathf.Abs(ReadEncoder.analogRotationValue - musicTargetValue) / 200f;
+        noiseVolume = Mathf.Clamp(noiseVolume, 0, 1);
         musicVolume = 1 - noiseVolume;
         noise.volume = noiseVolume;
         musicSource.volume = musicVolume;
