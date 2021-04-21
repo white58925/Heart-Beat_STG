@@ -26,7 +26,6 @@ public class CharacterSelect : MonoBehaviour
         {
             transform.GetChild(i).gameObject.SetActive(i == index);
         }
-        
     }
 
     public void ChangeChar(int change)

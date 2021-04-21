@@ -30,32 +30,32 @@ public class SequenceController : MonoBehaviour {
 
     private void LoadParameters()
     {
-        simultaneousRings = SongLoader.instance.activeSong.simultaneousRings;
+        simultaneousRings = SongLoader.instance.activeLevelObject.songObject.simultaneousRings;
 
         //Instantiate the rings
-        for (int i = 0; i < SongLoader.instance.activeSong.rings.Length; i++)
+        for (int i = 0; i < SongLoader.instance.activeLevelObject.songObject.rings.Length; i++)
         {
             //Debug.Log("Instantiating Ring " + i.ToString());
             GameObject newRing = Instantiate(ringPrefab);
             RingParent ringParent = newRing.GetComponent<RingParent>();
             newRing.transform.SetParent(this.gameObject.transform);
 
-            ringParent.notesToTelegraph = SongLoader.instance.activeSong.rings[i].notesToTelegraph;
-            ringParent.ringKeycode = SongLoader.instance.activeSong.rings[i].ringKeycode;
-            ringParent.ringTrack = SongLoader.instance.activeSong.rings[i].ringTrack;
-            ringParent.ringAudio = SongLoader.instance.activeSong.rings[i].ringSample;
-            ringParent.isMelody = SongLoader.instance.activeSong.rings[i].useMelody;
+            ringParent.notesToTelegraph = SongLoader.instance.activeLevelObject.songObject.rings[i].notesToTelegraph;
+            ringParent.ringKeycode = SongLoader.instance.activeLevelObject.songObject.rings[i].ringKeycode;
+            ringParent.ringTrack = SongLoader.instance.activeLevelObject.songObject.rings[i].ringTrack;
+            ringParent.ringAudio = SongLoader.instance.activeLevelObject.songObject.rings[i].ringSample;
+            ringParent.isMelody = SongLoader.instance.activeLevelObject.songObject.rings[i].useMelody;
             ringParent.beats = new List<float>();
-            for (int j = 0; j < SongLoader.instance.activeSong.rings[i].beats.Count; j++)
+            for (int j = 0; j < SongLoader.instance.activeLevelObject.songObject.rings[i].beats.Count; j++)
             {
                 //Debug.Log("Adding beat " + j.ToString() + " to ring " + i.ToString());
-                ringParent.beats.Add(SongLoader.instance.activeSong.rings[i].beats[j]);
+                ringParent.beats.Add(SongLoader.instance.activeLevelObject.songObject.rings[i].beats[j]);
             }
 
             ringParent.melodyNotes = new List<AudioClip>();
-            for (int j = 0; j < SongLoader.instance.activeSong.rings[i].melodyNotes.Count; j++)
+            for (int j = 0; j < SongLoader.instance.activeLevelObject.songObject.rings[i].melodyNotes.Count; j++)
             {
-                ringParent.melodyNotes.Add(SongLoader.instance.activeSong.rings[i].melodyNotes[j]);
+                ringParent.melodyNotes.Add(SongLoader.instance.activeLevelObject.songObject.rings[i].melodyNotes[j]);
             }
         }
     }
