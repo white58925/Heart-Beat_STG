@@ -47,11 +47,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequenceController: {fileID: 0}
   expandRing: {fileID: 4164760493251533936}
+  ringSize: 0
   currentCircle: 0
   notesToTelegraph: 0
   isDone: 0
   ringTrack: {fileID: 0}
   isMelody: 0
+  assistMode: 0
+  assistOn: 0
+  ringActive: 0
+  audioMixerGroup: {fileID: 0}
   circleScripts: []
   beats: []
   melodyNotes: []
@@ -124,6 +129,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -135,6 +141,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -146,7 +153,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 500389205
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 492a3e5f2413db74fa0b1110652e73e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
