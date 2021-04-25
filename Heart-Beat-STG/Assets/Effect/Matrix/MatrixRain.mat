@@ -20,12 +20,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_899C8774:
+        m_Texture: {fileID: 2800000, guid: 1780100467330f7429cebceba6af5327, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AlphaTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _HexTex:
-        m_Texture: {fileID: 2800000, guid: 4e5f3112377cb404589bdbe8df7bb95c, type: 3}
+        m_Texture: {fileID: 2800000, guid: ce10470989ac84249bd9c18d7bad3387, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -43,7 +47,9 @@ Material:
     m_Floats:
     - _EnableExternalAlpha: 0
     m_Colors:
-    - Vector2_2ABED8DA: {r: 0, g: 0.2, b: 0, a: 0}
+    - Color_5A1A9F99: {r: 1, g: 0, b: 0, a: 0}
+    - Vector2_2ABED8DA: {r: 0, g: 0.5, b: 0, a: 0}
+    - Vector2_E8C62FA9: {r: 0, g: 0.8, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
