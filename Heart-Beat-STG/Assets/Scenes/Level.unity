@@ -155,10 +155,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displacementMap: {fileID: 2800000, guid: 9273b688026ec4fc9b913999072afff5, type: 3}
   Shader: {fileID: 4800000, guid: 434e4be56dea542058e1cf4922f3beda, type: 3}
-  intensity: 0.016
-  flipIntensity: 0.016
-  colorIntensity: 0.016
-  glitchValue: 0.016
+  intensity: 0.19
+  flipIntensity: 0.19
+  colorIntensity: 0.19
+  glitchValue: 0.19
   source: {fileID: 8400000, guid: 69d9cb5a719754dc380ac698303cb337, type: 2}
   destination: {fileID: 8400000, guid: a903dd6bcafc543248b7a415a966bd56, type: 2}
 --- !u!114 &3798941
@@ -2244,7 +2244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 666973386}
   m_Layer: 0
-  m_Name: Debug
+  m_Name: Switch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
