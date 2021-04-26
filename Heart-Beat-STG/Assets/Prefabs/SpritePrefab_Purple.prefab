@@ -250,10 +250,10 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.68
-  m_Color: {r: 0.21320468, g: 0.09344964, b: 0.3962264, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1.2
   m_LightVolumeOpacity: 0.16
-  m_ApplyToSortingLayers: 19a353755555d31d
+  m_ApplyToSortingLayers: 19a35375
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0

@@ -200,16 +200,16 @@ MonoBehaviour:
   m_HasRenderer: 1
   m_UseRendererSilhouette: 1
   m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: 19a3537500000000b13620fb5555d31d4f2342025bcbf0eb
+  m_SelfShadows: 1
+  m_ApplyToSortingLayers: 5555d31d
   m_ShapePath:
-  - {x: -9.17, y: -5.145, z: 0}
-  - {x: 9.17, y: -5.145, z: 0}
-  - {x: 9.17, y: 5.145, z: 0}
-  - {x: -9.17, y: 5.145, z: 0}
-  m_ShapePathHash: 0
+  - {x: -1.1759489, y: -1.6141171, z: 0}
+  - {x: 1.1504014, y: -1.609179, z: 0}
+  - {x: 0.36595836, y: 1.4439348, z: 0}
+  - {x: -0.35245937, y: 1.4533589, z: 0}
+  m_ShapePathHash: 1680666176
   m_Mesh: {fileID: 0}
-  m_InstanceId: 61910
+  m_InstanceId: -119068
 --- !u!1 &1874593908126099855
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,10 +394,10 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.68
-  m_Color: {r: 0.6037736, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 2
   m_LightVolumeOpacity: 0.16
-  m_ApplyToSortingLayers: 19a353755555d31d
+  m_ApplyToSortingLayers: 19a35375
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -595,17 +595,17 @@ PrefabInstance:
     - target: {fileID: 5256745630234304963, guid: 8b8e429edd30b524388bfc5304556566,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.3584906
+      value: 0.7830189
       objectReference: {fileID: 0}
     - target: {fileID: 5256745630234304963, guid: 8b8e429edd30b524388bfc5304556566,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.3584906
+      value: 0.7830189
       objectReference: {fileID: 0}
     - target: {fileID: 5256745630234304963, guid: 8b8e429edd30b524388bfc5304556566,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.3584906
+      value: 0.7830189
       objectReference: {fileID: 0}
     - target: {fileID: 5256745630234304963, guid: 8b8e429edd30b524388bfc5304556566,
         type: 3}
