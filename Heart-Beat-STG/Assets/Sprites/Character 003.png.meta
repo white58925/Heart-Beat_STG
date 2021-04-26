@@ -4,52 +4,52 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 7145198348311737387
-    second: Sprite-0002_0
+    second: Character 003_0
   - first:
       213: -3708508325519384304
-    second: Sprite-0002_1
+    second: Character 003_1
   - first:
       213: 3106341853739790030
-    second: Sprite-0002_2
+    second: Character 003_2
   - first:
       213: 94058731202090889
-    second: Sprite-0002_3
+    second: Character 003_3
   - first:
       213: 1222221480408444849
-    second: Sprite-0002_4
+    second: Character 003_4
   - first:
       213: 7634275255999491522
-    second: Sprite-0002_5
+    second: Character 003_5
   - first:
       213: 4072447606386155404
-    second: Sprite-0002_6
+    second: Character 003_6
   - first:
       213: 2303573839472899717
-    second: Sprite-0002_7
+    second: Character 003_7
   - first:
       213: 3712664065799481960
-    second: Sprite-0002_8
+    second: Character 003_8
   - first:
       213: 110931416489072030
-    second: Sprite-0002_9
+    second: Character 003_9
   - first:
       213: -2936627703930910875
-    second: Sprite-0002_10
+    second: Character 003_10
   - first:
       213: -5564752774255026670
-    second: Sprite-0002_11
+    second: Character 003_11
   - first:
       213: -5543670047920101812
-    second: Sprite-0002_12
+    second: Character 003_12
   - first:
       213: -5248528119860549934
-    second: Sprite-0002_13
+    second: Character 003_13
   - first:
       213: 1378275472504835762
-    second: Sprite-0002_14
+    second: Character 003_14
   - first:
       213: 2659349063302250091
-    second: Sprite-0002_15
+    second: Character 003_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -147,7 +147,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0002_0
+      name: Character 003_0
       rect:
         serializedVersion: 2
         x: 0
@@ -155,7 +155,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,7 +168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0002_1
+      name: Character 003_1
       rect:
         serializedVersion: 2
         x: 48
@@ -176,7 +176,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,7 +189,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0002_2
+      name: Character 003_2
       rect:
         serializedVersion: 2
         x: 96
@@ -197,7 +197,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,7 +210,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0002_3
+      name: Character 003_3
       rect:
         serializedVersion: 2
         x: 144
@@ -218,7 +218,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,7 +231,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0002_4
+      name: Character 003_4
       rect:
         serializedVersion: 2
         x: 192
@@ -239,7 +239,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,15 +252,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0002_5
+      name: Character 003_5
       rect:
         serializedVersion: 2
-        x: 240
+        x: 242
         y: 0
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,7 +273,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0002_6
+      name: Character 003_6
       rect:
         serializedVersion: 2
         x: 288
@@ -281,7 +281,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,7 +294,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0002_7
+      name: Character 003_7
       rect:
         serializedVersion: 2
         x: 336
@@ -302,7 +302,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,7 +315,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0002_8
+      name: Character 003_8
       rect:
         serializedVersion: 2
         x: 384
@@ -323,7 +323,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,7 +336,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0002_9
+      name: Character 003_9
       rect:
         serializedVersion: 2
         x: 432
@@ -344,7 +344,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,7 +357,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0002_10
+      name: Character 003_10
       rect:
         serializedVersion: 2
         x: 480
@@ -365,7 +365,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,7 +378,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0002_11
+      name: Character 003_11
       rect:
         serializedVersion: 2
         x: 528
@@ -386,7 +386,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -399,7 +399,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0002_12
+      name: Character 003_12
       rect:
         serializedVersion: 2
         x: 576
@@ -407,7 +407,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -420,7 +420,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0002_13
+      name: Character 003_13
       rect:
         serializedVersion: 2
         x: 624
@@ -428,7 +428,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -441,7 +441,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0002_14
+      name: Character 003_14
       rect:
         serializedVersion: 2
         x: 672
@@ -449,7 +449,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -462,7 +462,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0002_15
+      name: Character 003_15
       rect:
         serializedVersion: 2
         x: 720
@@ -470,7 +470,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
