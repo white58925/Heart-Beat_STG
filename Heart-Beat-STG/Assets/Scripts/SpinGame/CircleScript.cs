@@ -18,6 +18,7 @@ public class CircleScript : MonoBehaviour {
     public KeyCode keyCode;
     public int measure;
     public GameObject arrow;
+    public ParticleSystem hitEffect;
 
     private void Awake()
     {
@@ -216,6 +217,7 @@ public class CircleScript : MonoBehaviour {
         //Debug.Log("Expanding Circle");
         childAnimator.ResetTrigger("collapse");
         childAnimator.SetTrigger("expand");
+        hitEffect.Play();
     }
 
     public void CollapseDot()
