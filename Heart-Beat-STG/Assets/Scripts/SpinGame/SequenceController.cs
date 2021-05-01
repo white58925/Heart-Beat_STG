@@ -38,6 +38,7 @@ public class SequenceController : MonoBehaviour {
             //Debug.Log("Instantiating Ring " + i.ToString());
             GameObject newRing = Instantiate(ringPrefab);
             RingParent ringParent = newRing.GetComponent<RingParent>();
+            //Ring.Transform
             newRing.transform.SetParent(this.gameObject.transform);
 
             ringParent.notesToTelegraph = SongLoader.instance.activeLevelObject.songObject.rings[i].notesToTelegraph;
