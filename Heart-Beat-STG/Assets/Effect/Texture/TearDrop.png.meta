@@ -1,43 +1,31 @@
 fileFormatVersion: 2
-guid: 0353ac0452765d74ba32950c1d7b76af
+guid: becc51e89374f564e9e0a0afcd40f39f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5967200187852993449
-    second: Glitch_B_0
+      213: 3925076060561352565
+    second: TearDrop_0
   - first:
-      213: -281637538927083132
-    second: Glitch_B_1
+      213: -730896763727143515
+    second: TearDrop_1
   - first:
-      213: 1725509298003972987
-    second: Glitch_B_2
+      213: 4151445688028081082
+    second: TearDrop_2
   - first:
-      213: -1177668560561616934
-    second: Glitch_B_3
+      213: -831071297967239435
+    second: TearDrop_3
   - first:
-      213: -9203947676609348559
-    second: Glitch_B_4
+      213: 7917410803414110211
+    second: TearDrop_4
   - first:
-      213: -215676285286188234
-    second: Glitch_B_5
+      213: 6621774742895469157
+    second: TearDrop_5
   - first:
-      213: -8791427689361960399
-    second: Glitch_B_6
+      213: -2297579213993451818
+    second: TearDrop_6
   - first:
-      213: -883353109868274169
-    second: Glitch_B_7
-  - first:
-      213: -8924734180652060362
-    second: Glitch_B_8
-  - first:
-      213: -6889346175544970167
-    second: Glitch_B_9
-  - first:
-      213: 4664544498970392693
-    second: Glitch_B_10
-  - first:
-      213: 2346921277919852614
-    second: Glitch_B_11
+      213: 2716857140075608262
+    second: TearDrop_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -67,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -81,9 +69,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -97,7 +85,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -109,7 +97,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -121,7 +109,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -135,253 +123,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Glitch_B_0
+      name: TearDrop_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577262291eba87630800000000000000
+      internalID: 3925076060561352565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TearDrop_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad9f8e04455bd5f0800000000000000
+      internalID: -730896763727143515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TearDrop_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbad33abd5ec9930800000000000000
+      internalID: 4151445688028081082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TearDrop_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fec3a5ce017774f0800000000000000
+      internalID: -831071297967239435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TearDrop_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300965e6d2b40ed60800000000000000
+      internalID: 7917410803414110211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TearDrop_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56220f48b0545eb50800000000000000
+      internalID: 6621774742895469157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TearDrop_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
-        height: 90
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75cc0637b0f303da0800000000000000
-      internalID: -5967200187852993449
+      spriteID: 6de5992c0eb5d10e0800000000000000
+      internalID: -2297579213993451818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Glitch_B_1
+      name: TearDrop_7
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 0
-        width: 160
-        height: 90
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48106d8862c671cf0800000000000000
-      internalID: -281637538927083132
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Glitch_B_2
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 160
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b73192c709d32f710800000000000000
-      internalID: 1725509298003972987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Glitch_B_3
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 160
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad744980fa418afe0800000000000000
-      internalID: -1177668560561616934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Glitch_B_4
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 160
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13cfa6c4a52054080800000000000000
-      internalID: -9203947676609348559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Glitch_B_5
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 0
-        width: 160
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63b7a0daf83c10df0800000000000000
-      internalID: -215676285286188234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Glitch_B_6
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 0
-        width: 160
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1321c0378139ef580800000000000000
-      internalID: -8791427689361960399
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Glitch_B_7
-      rect:
-        serializedVersion: 2
-        x: 1120
-        y: 0
-        width: 160
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70e901bd603bdb3f0800000000000000
-      internalID: -883353109868274169
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Glitch_B_8
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 160
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63172774c89f42480800000000000000
-      internalID: -8924734180652060362
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Glitch_B_9
-      rect:
-        serializedVersion: 2
-        x: 1440
-        y: 0
-        width: 160
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 94432f797202460a0800000000000000
-      internalID: -6889346175544970167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Glitch_B_10
-      rect:
-        serializedVersion: 2
-        x: 1600
-        y: 0
-        width: 160
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 578f12c028acbb040800000000000000
-      internalID: 4664544498970392693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Glitch_B_11
-      rect:
-        serializedVersion: 2
-        x: 1760
-        y: 0
-        width: 160
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 648f73eb770f19020800000000000000
-      internalID: 2346921277919852614
+      spriteID: 6c8b0b3ac2734b520800000000000000
+      internalID: 2716857140075608262
       vertices: []
       indices: 
       edges: []
