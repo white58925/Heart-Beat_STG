@@ -3706,7 +3706,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.2
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 19a3537500000000b13620fb5555d31d4f2342025bcbf0eb
   m_LightCookieSprite: {fileID: 0}
