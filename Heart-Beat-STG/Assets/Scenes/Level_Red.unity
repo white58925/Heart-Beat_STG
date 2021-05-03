@@ -6362,6 +6362,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 379784360260555015, guid: a5b4eb8d6e5d65b4498d84075723ccf4,
+        type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 379784360260555015, guid: a5b4eb8d6e5d65b4498d84075723ccf4,
+        type: 3}
+      propertyPath: m_RenderAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1874593908126099854, guid: a5b4eb8d6e5d65b4498d84075723ccf4,
         type: 3}
       propertyPath: m_RootOrder
@@ -6421,6 +6431,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpritePrefab_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 6937999082427960417, guid: a5b4eb8d6e5d65b4498d84075723ccf4,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6937999082427960417, guid: a5b4eb8d6e5d65b4498d84075723ccf4,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6937999082427960417, guid: a5b4eb8d6e5d65b4498d84075723ccf4,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5b4eb8d6e5d65b4498d84075723ccf4, type: 3}
