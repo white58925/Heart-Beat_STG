@@ -21,6 +21,8 @@ public class SequenceController : MonoBehaviour {
     [Header("Line and UI")]
     public Animator lineAnimator;
 
+    [Header("Root")]
+    public GameObject root;
 
     private void Awake()
     {
@@ -59,6 +61,7 @@ public class SequenceController : MonoBehaviour {
                 ringParent.melodyNotes.Add(SongLoader.instance.activeLevelObject.songObject.rings[i].melodyNotes[j]);
             }
         }
+        
     }
 
     private void Start()
@@ -66,6 +69,7 @@ public class SequenceController : MonoBehaviour {
         PopulateTracks();
         PopulateRings();
         lineAnimator.SetTrigger("appear");
+        root.transform.position = new Vector3(0, -2, 0);
     }
 
     private void PopulateTracks()

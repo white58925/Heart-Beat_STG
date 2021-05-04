@@ -2289,6 +2289,7 @@ MonoBehaviour:
   - {fileID: 243067836102433180, guid: f847d59deafb6d542a38aad93ef56e6e, type: 2}
   - {fileID: 243378005874791098, guid: f847d59deafb6d542a38aad93ef56e6e, type: 2}
   lineAnimator: {fileID: 313852120}
+  root: {fileID: 1084430590}
 --- !u!114 &750183996
 MonoBehaviour:
   m_ObjectHideFlags: 0
