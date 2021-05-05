@@ -5,12 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class UdinoController : MonoBehaviour
 {
+    public bool useEncoder = true;
+
     int lastPin9ButtonValue = 1;
     int lastPin6ButtonValue = 0; 
     int maxAnalogValue = 670;
     int analogThreshold = 1;
     int analogIndex = 0;
     int lastAnalogIndex = 0;
+    [HideInInspector]
     public static int analogRotationValue;
 
     private void Awake()
