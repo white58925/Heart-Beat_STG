@@ -23,7 +23,7 @@ public class SequenceController : MonoBehaviour {
 
     [Header("Root")]
     public GameObject root;
-
+    private int nextIndex = 1;
     private void Awake()
     {
         LoadParameters();
@@ -114,6 +114,7 @@ public class SequenceController : MonoBehaviour {
 
     public void CompleteRing()
     {
+
         //Debug.Log("checking for full completion");
         int random = (Random.value > 0.5f ? 1 : -1) * Random.Range(80, 120);
         Conductor.instance.musicTargetValue += random;
@@ -132,7 +133,11 @@ public class SequenceController : MonoBehaviour {
                 Conductor.instance.loops[index].volume = Conductor.instance.musicVolume;
                 ringParents[index].CompleteRing();
             }
-
+            if (nextIndex < Conductor.instance.loops.Length)
+            {
+                Conductor.instance.loops[nextIndex].volume = Conductor.instance.musicVolume;
+                nextIndex++;
+            }
             //Activate the next set of rings
             activeRing += simultaneousRings;
 
@@ -151,6 +156,7 @@ public class SequenceController : MonoBehaviour {
                     activeRings.Add(i);
                 }
             }
+            
         } else
         {
             //Debug.Log("Ring set not complete. waiting to completion");

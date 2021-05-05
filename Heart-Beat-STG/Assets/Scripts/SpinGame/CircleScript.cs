@@ -130,8 +130,8 @@ public class CircleScript : MonoBehaviour {
             didHit = true;
             hittable = false;
             //play the ssound
-            audioSource.volume = Conductor.instance.musicVolume;
-            audioSource.Play();
+            //audioSource.volume = Conductor.instance.musicVolume;
+            //audioSource.Play();
             //activaate the inner circle
             ExpandDot();
             //Check with parent for completion

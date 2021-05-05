@@ -147,8 +147,10 @@ public class Conductor : MonoBehaviour {
         }
         else
         {
+            noiseVolume = 0f;
+            musicVolume = 1f;
             noise.volume = 0f;
-            musicSource.volume = 1f;
+            musicSource.volume = musicVolume;
         }
     }
     public void Resume()
@@ -168,12 +170,9 @@ public class Conductor : MonoBehaviour {
         //Start the track loops
         for (int i=0; i<loops.Length; i++)
         {
-            loops[i].volume = 0;
-            //loops[i].Play();
-            //Debug.Log("Track starting");
+            loops[i].volume = i == 0 ? 1 : 0;
             loops[i].PlayScheduled(dspSongTime + startingPosition + offsetToFirstBeat);
         }
-
         musicStarted = true;
     }
     
