@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed128e6d09dd494b9335f5e821f1d18, type: 3}
   m_Name: Tutorial
   m_EditorClassIdentifier: 
-  visualEffectObject: {fileID: 7250530771541041045, guid: 0135739002f1b6c48a6f869e2de8e7ff,
+  visualEffectObject: {fileID: 4883925356329758981, guid: e974a7d69fc31644699905094c2250b9,
     type: 3}
-  songObject: {fileID: 11400000, guid: c3073601a8f54944faf8e67d0207fc71, type: 2}
-  color: {r: 0, g: 0, b: 0, a: 0}
+  songObject: {fileID: 11400000, guid: 1d7a3303e1b6d5d499ca8d35b584438a, type: 2}

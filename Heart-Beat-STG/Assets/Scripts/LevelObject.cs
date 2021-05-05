@@ -9,5 +9,4 @@ public class LevelObject : ScriptableObject
     
     public GameObject visualEffectObject;
     public SongObject songObject;
-    public Color color;
 }
