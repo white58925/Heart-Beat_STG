@@ -6,6 +6,9 @@ using TMPro;
 
 public class Conductor : MonoBehaviour {
 
+    [Header("Use Noise")]
+    public bool useNoise = true;
+    [Header("Other")]
     public float noiseVolume = 0f;
     public float musicVolume = 1f;
     public int musicTargetValue = 100;
@@ -134,11 +137,19 @@ public class Conductor : MonoBehaviour {
     }
     public void SetNoiseAndMusicVolume()
     {
-        noiseVolume = (float)Mathf.Abs(ReadEncoder.analogRotationValue - musicTargetValue) / 200f;
-        noiseVolume = Mathf.Clamp(noiseVolume, 0, 1);
-        musicVolume = 1 - noiseVolume;
-        noise.volume = noiseVolume;
-        musicSource.volume = musicVolume;
+        if (useNoise)
+        {
+            noiseVolume = (float)Mathf.Abs(ReadEncoder.analogRotationValue - musicTargetValue) / 200f;
+            noiseVolume = Mathf.Clamp(noiseVolume, 0, 1);
+            musicVolume = 1 - noiseVolume;
+            noise.volume = noiseVolume;
+            musicSource.volume = musicVolume;
+        }
+        else
+        {
+            noise.volume = 0f;
+            musicSource.volume = 1f;
+        }
     }
     public void Resume()
     {
