@@ -6,7 +6,7 @@ public class CharacterSelect : MonoBehaviour
     [SerializeField] private Button previousButton;
     [SerializeField] private Button nextButton;
     private int currentChar;
-    private int characterCount = 3;
+    private int characterCount = 4;
 
     public int CurrentChar
     {

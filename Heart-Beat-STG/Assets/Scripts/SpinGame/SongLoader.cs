@@ -24,7 +24,7 @@ public class SongLoader : MonoBehaviour
         }
         DontDestroyOnLoad(this.gameObject);
     }
-    public void LoadScene(int levelIndex)
+    public void LoadLevel(int levelIndex)
     {
         if (levelIndex < levelObjectList.Count)
         {

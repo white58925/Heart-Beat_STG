@@ -44,6 +44,10 @@ public class UIController : MonoBehaviour
     }
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
         if (Input.GetAxis("Horizontal") != 0)
         {
             if (!keyDown)
@@ -114,8 +118,9 @@ public class UIController : MonoBehaviour
     public void StartGame()
     {
         PlayerPrefs.SetInt("Scene", 1);
-        Debug.LogError(characterSelect.CurrentChar + " Chracter Start Game");
-        SongLoader.instance.LoadScene(1, SongType.Dance);
+        SongLoader.instance.LoadLevel(characterSelect.CurrentChar);
+        //SongLoader.instance.LoadScene(1, SongType.Dance);
+
         SceneManager.LoadScene(1);
     }
     public void ArduinoButtonClick()

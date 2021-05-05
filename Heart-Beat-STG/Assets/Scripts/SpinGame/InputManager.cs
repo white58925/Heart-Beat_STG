@@ -65,29 +65,33 @@ public class InputManager : MonoBehaviour {
                 EventManager.TriggerEvent("assistStop");
             }
         }
-
-        if (Input.GetKeyDown(pause))
-        {
-            if (Conductor.instance.isTutorial)
-            {
-                PlayerPrefs.SetInt("FirstTime", 1);
-                Debug.Log("Loading Main Scene");
-                SongLoader.instance.LoadScene(1, SongType.Dance);
-                SceneManager.LoadScene(1);
-            }
-            else
-            {
-                if (!Conductor.paused)
-                {
-                    Conductor.paused = true;
-                    MiddleButton.instance.Pause();
-                }
-                else
-                {
-                    Conductor.instance.Resume();
-                    MiddleButton.instance.UnPause();
-                }
-            }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {                     
+            PlayerPrefs.SetInt("Scene", 0);
+            SceneManager.LoadScene(0);
         }
+        //if (Input.GetKeyDown(pause))
+        //{
+        //    if (Conductor.instance.isTutorial)
+        //    {
+        //        PlayerPrefs.SetInt("FirstTime", 1);
+        //        Debug.Log("Loading Main Scene");
+        //        SongLoader.instance.LoadScene(1, SongType.Dance);
+        //        SceneManager.LoadScene(1);
+        //    }
+        //    else
+        //    {
+        //        if (!Conductor.paused)
+        //        {
+        //            Conductor.paused = true;
+        //            MiddleButton.instance.Pause();
+        //        }
+        //        else
+        //        {
+        //            Conductor.instance.Resume();
+        //            MiddleButton.instance.UnPause();
+        //        }
+        //    }
+        //}
     }
 }
