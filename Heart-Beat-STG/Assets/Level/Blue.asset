@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualEffectObject: {fileID: 4883925356329758981, guid: 6deff84003dabb74cae9ece0d2aadb58,
     type: 3}
-  songObject: {fileID: 11400000, guid: 10775809ad2672f459fdcd459893aed4, type: 2}
-  color: {r: 0, g: 0.2555086, b: 0.3773585, a: 0}
+  songObject: {fileID: 11400000, guid: c3073601a8f54944faf8e67d0207fc71, type: 2}
