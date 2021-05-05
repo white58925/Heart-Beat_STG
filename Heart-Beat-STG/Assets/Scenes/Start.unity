@@ -142,7 +142,7 @@ PrefabInstance:
     - target: {fileID: 3881401168165308745, guid: 302cf6941b2dcad4ab0e63dcab852c0c,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.2735849
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3881401168165308745, guid: 302cf6941b2dcad4ab0e63dcab852c0c,
         type: 3}
@@ -152,7 +152,7 @@ PrefabInstance:
     - target: {fileID: 3881401168165308745, guid: 302cf6941b2dcad4ab0e63dcab852c0c,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.09170575
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3881401168165308758, guid: 302cf6941b2dcad4ab0e63dcab852c0c,
         type: 3}
@@ -1026,6 +1026,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1756879876023625808, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756879876023625810, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756879876023625810, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756879876136149377, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756879876136149379, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756879876136149379, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5285373876043317760, guid: cabddb686d0f66d45812984366fc6afc,
         type: 3}
       propertyPath: mainMenuGameObject
