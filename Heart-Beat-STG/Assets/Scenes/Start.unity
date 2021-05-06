@@ -1007,6 +1007,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Start Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 2828982947891443778, guid: 7d2361762821ff44cb0977f4c656bcec,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2828982948295194046, guid: 7d2361762821ff44cb0977f4c656bcec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1015,6 +1020,11 @@ PrefabInstance:
     - target: {fileID: 2828982948295194046, guid: 7d2361762821ff44cb0977f4c656bcec,
         type: 3}
       propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2828982948667211336, guid: 7d2361762821ff44cb0977f4c656bcec,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1040,6 +1050,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 390503282349748415, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 516177336849637924, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.7411765
+      objectReference: {fileID: 0}
+    - target: {fileID: 516177336849637924, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 516177336849637924, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.5803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 516177336849637924, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1756879876023625808, guid: cabddb686d0f66d45812984366fc6afc,
         type: 3}
@@ -1142,11 +1177,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5285373876084006328, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.5477024
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285373876084006328, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285373876084006328, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.83137256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285373876084006328, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5285373876158359400, guid: cabddb686d0f66d45812984366fc6afc,
         type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 0436dde15a5d04d4498792c448f56f3d, type: 2}
+    - target: {fileID: 5285373876492809387, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.8301887
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285373876492809387, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5247419
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285373876492809387, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.6891263
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285373876492809387, guid: cabddb686d0f66d45812984366fc6afc,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5285373876892022640, guid: cabddb686d0f66d45812984366fc6afc,
         type: 3}
       propertyPath: m_Controller
