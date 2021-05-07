@@ -69,7 +69,7 @@ public class SequenceController : MonoBehaviour {
         PopulateTracks();
         PopulateRings();
         lineAnimator.SetTrigger("appear");
-        root.transform.position = new Vector3(0, -2, 0);
+        root.transform.position = new Vector3(0, -5, 0);
     }
 
     private void PopulateTracks()
