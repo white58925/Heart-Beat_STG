@@ -139,7 +139,7 @@ public class Conductor : MonoBehaviour {
     {
         if (useNoise)
         {
-            noiseVolume = (float)Mathf.Abs(ReadEncoder.analogRotationValue - musicTargetValue) / 200f;
+            noiseVolume = (float)Mathf.Abs(UdinoController.analogRotationValue - musicTargetValue) / 200f;
             noiseVolume = Mathf.Clamp(noiseVolume, 0, 1);
             musicVolume = 1 - noiseVolume;
             noise.volume = noiseVolume;

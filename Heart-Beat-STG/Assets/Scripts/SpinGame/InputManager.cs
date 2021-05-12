@@ -68,7 +68,7 @@ public class InputManager : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Escape))
         {                     
             PlayerPrefs.SetInt("Scene", 0);
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
         //if (Input.GetKeyDown(pause))
         //{
