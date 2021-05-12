@@ -121,7 +121,7 @@ public class UIController : MonoBehaviour
         SongLoader.instance.LoadLevel(characterSelect.CurrentChar);
         //SongLoader.instance.LoadScene(1, SongType.Dance);
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
     public void ArduinoButtonClick()
     {

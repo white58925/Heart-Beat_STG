@@ -1,111 +1,89 @@
 ﻿using System.Collections;
 using UnityEngine;
 using Uduino;
+using System;
 using UnityEngine.SceneManagement;
 
 public class UdinoController : MonoBehaviour
 {
-    public bool useEncoder = true;
-
-    int lastPin9ButtonValue = 1;
-    int lastPin6ButtonValue = 0; 
-    int maxAnalogValue = 670;
-    int analogThreshold = 1;
-    int analogIndex = 0;
-    int lastAnalogIndex = 0;
     [HideInInspector]
-    public static int analogRotationValue;
+    public static int analogRotationValue = 0;
 
+    private int roatationThreshold = 10;
+    private int rotationInitialValue;
+    private int characterCount = 4;
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
+        UduinoManager.Instance.OnDataReceived += DataReceived;
     }
     private void Start()
     {
-        analogThreshold = maxAnalogValue / 3;
-
-        int analogValue = UduinoManager.Instance.analogRead(AnalogPin.A0);     
-        analogIndex = GetAnaolgIndex(analogValue);
-        lastAnalogIndex = analogIndex;
+        rotationInitialValue = analogRotationValue;
     }
-    void Update()
+    private int GetAnaolgIndex(int value)
     {
-        CheckButton9Pin();
-        CheckButton6Pin();
-        CheckAnalogValue();    
-    }
-    private void CheckButton9Pin()
-    {
-        int buttonValue = UduinoManager.Instance.digitalRead(9);
-        if (buttonValue == 0 && lastPin9ButtonValue == 1)
+        if(analogRotationValue >= rotationInitialValue)
         {
-            if (PlayerPrefs.GetInt("Scene", 0) == 0)
+            return (analogRotationValue - rotationInitialValue) / roatationThreshold % characterCount;
+        }
+        else
+        {
+            int a = Mathf.Abs(analogRotationValue - rotationInitialValue) / roatationThreshold % characterCount;
+            return a == 3 ? 1 : a == 1 ? 3 : a; 
+        }
+    }
+    void DataReceived(string data, UduinoDevice board)
+    {
+        int number;
+        if (Int32.TryParse(data, out number))
+        {
+            if (number == 10000 || number == 10001)
             {
-                EventManager.TriggerEvent("Arduino");
-            }
-            else
-            {
-                EventManager.TriggerEvent("UpArrow");
-            }
-            lastPin9ButtonValue = 0;
-        }
-        else if (buttonValue == 1 && lastPin9ButtonValue == 0)
-        {
-            lastPin9ButtonValue = 1;
-        }
-    }
-    private void CheckButton6Pin()
-    {
-        int buttonValue = UduinoManager.Instance.digitalRead(6);
-        if (buttonValue == 0 && lastPin6ButtonValue == 1)
-        {
-            EventManager.TriggerEvent("assistStart");
-            lastPin6ButtonValue = 0;
-        }
-        else if (buttonValue == 1 && lastPin6ButtonValue == 0)
-        {
-            EventManager.TriggerEvent("assistStop");
-            lastPin6ButtonValue = 1;
-        }
-    }
-    private void CheckAnalogValue()
-    {
-        int analogValue = UduinoManager.Instance.analogRead(AnalogPin.A0);
-        //Debug.LogError(analogValue);
-        analogIndex = GetAnaolgIndex(analogValue);
-        analogRotationValue = analogValue;
-        if (lastAnalogIndex != analogIndex)
-        {
-            lastAnalogIndex = analogIndex;
-            if (PlayerPrefs.GetInt("Scene", 0) == 0 && UIController.Instance != null)
-            {
-                switch (UIController.Instance.uiState)
+                if (number == 10000)
                 {
-                    case UIState.MainMenu:
-                        UIController.Instance.index = analogIndex;
-                        break;
-                    case UIState.CharacterSelect:
-                        UIController.Instance.SetCharacterSelect(analogIndex);
-                        break;
+                    if (PlayerPrefs.GetInt("Scene", 0) == 0)
+                    {
+                        if (UIController.Instance.uiState == UIState.MainMenu)
+                        {
+                            rotationInitialValue = analogRotationValue;
+                        }
+                        EventManager.TriggerEvent("Arduino");
+                    }
+                    else
+                    {
+                        EventManager.TriggerEvent("UpArrow");
+                    }
+                }
+            }
+            else if (number == 10003 || number == 10004)
+            {
+                if (number == 10003)
+                {
+                    if (PlayerPrefs.GetInt("Scene", 0) == 0)
+                    {
+                        Application.Quit();
+                    }
+                    else
+                    {
+                        PlayerPrefs.SetInt("Scene", 0);
+                        rotationInitialValue = analogRotationValue;
+                        SceneManager.LoadScene(1);
+                    }
                 }
             }
             else
             {
-                analogRotationValue = analogValue;
+                analogRotationValue = number;
+                if (PlayerPrefs.GetInt("Scene", 0) == 0)
+                {
+                    if(UIController.Instance.uiState == UIState.CharacterSelect)
+                    {
+                        UIController.Instance.SetCharacterSelect(GetAnaolgIndex(analogRotationValue));
+                    }
+                    Application.Quit();
+                }
             }
         }
     }
-    private int GetAnaolgIndex(int value)
-    {
-        if(value < analogThreshold)
-        {
-            return 0;
-        }
-        else if (value < 2 * analogThreshold)
-        {
-            return 1;
-        }
-        return 2;
-    }
-
 }
