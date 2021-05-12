@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &3798940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,10 +155,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displacementMap: {fileID: 2800000, guid: 9273b688026ec4fc9b913999072afff5, type: 3}
   Shader: {fileID: 4800000, guid: 434e4be56dea542058e1cf4922f3beda, type: 3}
-  intensity: 0.05
-  flipIntensity: 0.05
-  colorIntensity: 0.05
-  glitchValue: 0.05
+  intensity: 0.535
+  flipIntensity: 0.535
+  colorIntensity: 0.535
+  glitchValue: 0.535
   source: {fileID: 8400000, guid: 69d9cb5a719754dc380ac698303cb337, type: 2}
   destination: {fileID: 8400000, guid: a903dd6bcafc543248b7a415a966bd56, type: 2}
 --- !u!114 &3798941
@@ -1532,7 +1532,7 @@ PrefabInstance:
     - target: {fileID: 2324466905335604451, guid: 9592fba184a33ff418b4208af0cfa1fc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9592fba184a33ff418b4208af0cfa1fc, type: 3}
@@ -2638,7 +2638,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1084430591
 Transform:
   m_ObjectHideFlags: 0
@@ -4084,7 +4084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1169019389771402, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4720884688345560, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
       propertyPath: m_RootOrder
