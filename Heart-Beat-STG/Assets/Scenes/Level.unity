@@ -2176,7 +2176,7 @@ MonoBehaviour:
   simultaneousRings: 2
   activeRing: 0
   ringParents: []
-  ringPrefab: {fileID: 5432353815960512770, guid: a9109e7448e6e494d887dccafe5878f9,
+  ringPrefab: {fileID: 5432353815960512770, guid: 0cbfc54f27652af428c335625302f8f6,
     type: 3}
   ringMixers:
   - {fileID: 243495660627479052, guid: f847d59deafb6d542a38aad93ef56e6e, type: 2}
