@@ -217,7 +217,7 @@ public class CircleScript : MonoBehaviour {
         //Debug.Log("Expanding Circle");
         childAnimator.ResetTrigger("collapse");
         childAnimator.SetTrigger("expand");
-        //hitEffect.Play();
+        hitEffect.Play();
     }
 
     public void CollapseDot()

@@ -127,7 +127,8 @@ MonoBehaviour:
   keyCode: 274
   measure: 0
   arrow: {fileID: 1205471533383084}
-  hitEffect: {fileID: 0}
+  hitEffect: {fileID: 2737079520783237255, guid: d706dd9973b2ce645b4875ec1dd4fe45,
+    type: 3}
 --- !u!82 &82690180534263000
 AudioSource:
   m_ObjectHideFlags: 0
