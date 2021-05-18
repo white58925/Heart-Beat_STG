@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca36fbcc38f87314d9f095aad4e855f9, type: 3}
+  m_Name: Sad
+  m_EditorClassIdentifier: 
+  bpm: 80
+  metronomeClip: {fileID: 8300000, guid: afe0cb7f3e9164d63a23de6c5bc85d6a, type: 3}
+  timeSig: 8
+  beatThreshold: 0.45
+  simultaneousRings: 1
+  rings:
+  - notesToTelegraph: 1
+    ringKeycode: 273
+    ringTrack: {fileID: 8300000, guid: 48569c9b20d1540baaa73c5e76411dbc, type: 3}
+    ringSample: {fileID: 0}
+    useMelody: 0
+    beats:
+    - 1
+    - 3
+    - 5
+    - 7
+    melodyNotes: []
+  - notesToTelegraph: 2
+    ringKeycode: 273
+    ringTrack: {fileID: 8300000, guid: 0085432e6383d494983ae1b7637120fa, type: 3}
+    ringSample: {fileID: 0}
+    useMelody: 0
+    beats:
+    - 1
+    - 1.5
+    - 2
+    - 2.5
+    - 3
+    - 3.5
+    - 4
+    - 4.5
+    - 5
+    - 5.5
+    - 6
+    - 6.5
+    - 7
+    - 7.5
+    - 8
+    - 8.5
+    melodyNotes: []
+  - notesToTelegraph: 3
+    ringKeycode: 273
+    ringTrack: {fileID: 8300000, guid: 6b9b348fccabf4ffe8183325d44e81ab, type: 3}
+    ringSample: {fileID: 0}
+    useMelody: 0
+    beats:
+    - 1
+    - 3
+    - 4.5
+    - 5
+    - 6.5
+    - 7
+    - 7.5
+    - 8
+    - 8.5
+    melodyNotes: []

@@ -15,4 +15,3 @@ MonoBehaviour:
   visualEffectObject: {fileID: 1874593908126099855, guid: a5b4eb8d6e5d65b4498d84075723ccf4,
     type: 3}
   songObject: {fileID: 11400000, guid: 542b5ce5c2eb94e1bafac39a7bde2c75, type: 2}
-  color: {r: 0.22745098, g: 0, b: 0, a: 0}

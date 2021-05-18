@@ -143,14 +143,14 @@ public class Conductor : MonoBehaviour {
             noiseVolume = Mathf.Clamp(noiseVolume, 0, 1);
             musicVolume = 1 - noiseVolume;
             noise.volume = noiseVolume;
-            musicSource.volume = musicVolume;
+            musicSource.volume = 0;
         }
         else
         {
             noiseVolume = 0f;
             musicVolume = 1f;
             noise.volume = 0f;
-            musicSource.volume = musicVolume;
+            musicSource.volume = 0;
         }
     }
     public void Resume()

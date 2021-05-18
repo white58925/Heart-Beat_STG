@@ -4169,7 +4169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd31a8ef9cafe24694d0eb8a4cc296f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useNoise: 1
+  useNoise: 0
   noiseVolume: 0
   musicVolume: 1
   musicTargetValue: 100

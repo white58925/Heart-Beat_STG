@@ -133,7 +133,7 @@ public class SequenceController : MonoBehaviour {
                 Conductor.instance.loops[index].volume = Conductor.instance.musicVolume;
                 ringParents[index].CompleteRing();
             }
-            if (nextIndex < Conductor.instance.loops.Length)
+            if (nextIndex < SongLoader.instance.activeLevelObject.songObject.rings.Length)
             {
                 Conductor.instance.loops[nextIndex].volume = Conductor.instance.musicVolume;
                 nextIndex++;
