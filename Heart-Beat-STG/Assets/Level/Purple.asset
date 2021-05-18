@@ -16,4 +16,5 @@ MonoBehaviour:
     type: 3}
   songObject: {fileID: 11400000, guid: 3ac3e224440c94f54b07feaf6eb367d4, type: 2}
   circleSprite: {fileID: 21300000, guid: e6d23d2dbe7622b47b13fb55a2c6f11b, type: 3}
-  circleDotSprite: {fileID: 21300000, guid: e6d23d2dbe7622b47b13fb55a2c6f11b, type: 3}
+  circleDotSprite: {fileID: -317924184687871812, guid: d25b78a7886ea764f9befe0fa5d9dca0,
+    type: 3}
