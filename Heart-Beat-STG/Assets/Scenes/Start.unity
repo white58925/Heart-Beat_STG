@@ -802,26 +802,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Start Menu
       objectReference: {fileID: 0}
-    - target: {fileID: 2828982947891443778, guid: 7d2361762821ff44cb0977f4c656bcec,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2828982948295194046, guid: 7d2361762821ff44cb0977f4c656bcec,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2828982948295194046, guid: 7d2361762821ff44cb0977f4c656bcec,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2828982948667211336, guid: 7d2361762821ff44cb0977f4c656bcec,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d2361762821ff44cb0977f4c656bcec, type: 3}
 --- !u!1001 &3499392264272882448
