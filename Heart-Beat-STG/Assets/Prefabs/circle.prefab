@@ -127,6 +127,7 @@ MonoBehaviour:
   keyCode: 274
   measure: 0
   arrow: {fileID: 1205471533383084}
+  dotSpriteRenderer: {fileID: 212937449215750722}
 --- !u!82 &82690180534263000
 AudioSource:
   m_ObjectHideFlags: 0
@@ -393,9 +394,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 500389205
   m_SortingLayer: 2
-  m_SortingOrder: 2
-  m_Sprite: {fileID: -5421611157761809769, guid: 0d59cf7f47ce3a0439a9dc152649b986,
-    type: 3}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: 8421d69d1928e4902a4faccd0e09bf13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

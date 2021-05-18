@@ -18,7 +18,7 @@ public class CircleScript : MonoBehaviour {
     public KeyCode keyCode;
     public int measure;
     public GameObject arrow;
-
+    public SpriteRenderer dotSpriteRenderer;
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -26,7 +26,7 @@ public class CircleScript : MonoBehaviour {
         animator = GetComponent<Animator>();
         SpriteRenderer circleImage =gameObject.GetComponent<SpriteRenderer>();
         circleImage.sprite = SongLoader.instance.activeLevelObject.circleSprite;
-
+        dotSpriteRenderer.sprite = SongLoader.instance.activeLevelObject.circleDotSprite;
     }
     
     public void Initialize(KeyCode keyCode, float beat, AudioClip audioClip, AudioMixerGroup audioMixerGroup)
