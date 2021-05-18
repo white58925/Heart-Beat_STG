@@ -24,6 +24,9 @@ public class CircleScript : MonoBehaviour {
         audioSource = GetComponent<AudioSource>();
         ringParent = GetComponentInParent<RingParent>();
         animator = GetComponent<Animator>();
+        SpriteRenderer circleImage =gameObject.GetComponent<SpriteRenderer>();
+        circleImage.sprite = SongLoader.instance.activeLevelObject.circleSprite;
+
     }
     
     public void Initialize(KeyCode keyCode, float beat, AudioClip audioClip, AudioMixerGroup audioMixerGroup)
