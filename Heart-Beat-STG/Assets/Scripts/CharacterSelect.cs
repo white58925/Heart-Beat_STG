@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-
+using System.Collections.Generic;
 public class CharacterSelect : MonoBehaviour
 {
     [SerializeField] private Button previousButton;
     [SerializeField] private Button nextButton;
+    [SerializeField] private List<GameObject> characterInfoList = new List<GameObject>();
+    public bool isShowingCharacterInfo = false;
     private int currentChar;
     private int characterCount = 4;
 
@@ -39,5 +41,18 @@ public class CharacterSelect : MonoBehaviour
     {        
         currentChar = value;
         SelectChar(currentChar);
+    }
+    public void ShowCharacterInfo(int index)
+    {
+        isShowingCharacterInfo = true;
+        characterInfoList[index].SetActive(true);
+    }
+    public void HideCharacterInfo()
+    {
+        isShowingCharacterInfo = false;
+        foreach (GameObject gameObject in characterInfoList)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

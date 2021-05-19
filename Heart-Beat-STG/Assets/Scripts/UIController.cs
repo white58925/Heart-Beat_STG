@@ -47,8 +47,34 @@ public class UIController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            OnClickEscapeButton();
         }
+        else
+        {
+            if (!mainMenuGameObject.activeSelf)
+            {
+                if (Input.GetKeyDown(KeyCode.RightArrow))
+                {
+                    characterSelect.ChangeChar(1);
+                }
+                else if (Input.GetKeyDown(KeyCode.LeftArrow))
+                {
+                    characterSelect.ChangeChar(-1);
+                }
+                else if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    StartGame();
+                }
+            }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    UIButtonClick(UIButton.Start);
+                }
+            }
+        }
+
         if (Input.GetAxis("Horizontal") != 0)
         {
             if (!keyDown)
@@ -82,28 +108,7 @@ public class UIController : MonoBehaviour
         {
             keyDown = false;
         }
-        if(!mainMenuGameObject.activeSelf)
-        {            
-            if (Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                characterSelect.ChangeChar(1);
-            }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow))
-            {
-                characterSelect.ChangeChar(-1);
-            }
-            else if (Input.GetKeyDown(KeyCode.Space))
-            {
-                StartGame();
-            }
-        }
-        else
-        {
-            if (Input.anyKey)
-            {
-                UIButtonClick(UIButton.Start);
-            }
-        }
+        
     }
     public void UIButtonClick(UIButton uiButtonType)
     {
@@ -114,6 +119,7 @@ public class UIController : MonoBehaviour
                 uiState = UIState.CharacterSelect;
                 mainMenuGameObject.SetActive(false);
                 characterSelectGameObject.SetActive(true);
+                characterSelect.HideCharacterInfo();
                 uiPrefabGameObject.SetActive(true);
                 break;
             case UIButton.Option:
@@ -126,12 +132,17 @@ public class UIController : MonoBehaviour
     public void StartGame()
     {
         SongLoader.instance.PlaySoundEffect();
-        SongLoader.instance.PlayUIMusic(false);
-        PlayerPrefs.SetInt("Scene", 1);
-        SongLoader.instance.LoadLevel(characterSelect.CurrentChar);
-        //SongLoader.instance.LoadScene(1, SongType.Dance);
-
-        SceneManager.LoadScene(2);
+        if (characterSelect.isShowingCharacterInfo)
+        {
+            SongLoader.instance.PlayUIMusic(false);
+            PlayerPrefs.SetInt("Scene", 1);
+            SongLoader.instance.LoadLevel(characterSelect.CurrentChar);
+            SceneManager.LoadScene(2);
+        }
+        else
+        {
+            characterSelect.ShowCharacterInfo(characterSelect.CurrentChar);
+        }       
     }
     public void ArduinoButtonClick()
     {
@@ -149,5 +160,28 @@ public class UIController : MonoBehaviour
     public void SetCharacterSelect(int value)
     {        
         characterSelect.SetChar(value);
+    }
+    public void OnClickEscapeButton()
+    {
+        if (uiState == UIState.MainMenu)
+        {
+            Application.Quit();
+        }
+        else
+        {
+            if (characterSelect.isShowingCharacterInfo)
+            {
+                characterSelect.HideCharacterInfo();
+            }
+            else
+            {
+                SongLoader.instance.PlayUIMusic(true);
+                uiState = UIState.MainMenu;
+                mainMenuGameObject.SetActive(true);
+                characterSelectGameObject.SetActive(false);
+                characterSelect.HideCharacterInfo();
+                uiPrefabGameObject.SetActive(false);
+            }
+        }
     }
 }
