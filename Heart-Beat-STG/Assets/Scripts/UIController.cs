@@ -83,12 +83,8 @@ public class UIController : MonoBehaviour
             keyDown = false;
         }
         if(!mainMenuGameObject.activeSelf)
-        {
-            if(Input.GetKeyDown(KeyCode.Space))
-            {
-                StartGame();
-            }
-            else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {            
+            if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 characterSelect.ChangeChar(1);
             }
@@ -96,7 +92,17 @@ public class UIController : MonoBehaviour
             {
                 characterSelect.ChangeChar(-1);
             }
-
+            else if (Input.GetKeyDown(KeyCode.Space))
+            {
+                StartGame();
+            }
+        }
+        else
+        {
+            if (Input.anyKey)
+            {
+                UIButtonClick(UIButton.Start);
+            }
         }
     }
     public void UIButtonClick(UIButton uiButtonType)
@@ -132,7 +138,8 @@ public class UIController : MonoBehaviour
         SongLoader.instance.PlaySoundEffect();
         if (mainMenuGameObject.activeSelf)
         {
-            UIButtonClick((UIButton)index);
+            UIButtonClick(UIButton.Start);
+            //UIButtonClick((UIButton)index);
         }
         else
         {
