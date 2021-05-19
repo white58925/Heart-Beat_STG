@@ -15,6 +15,9 @@ MonoBehaviour:
   visualEffectObject: {fileID: 1874593908126099855, guid: a5b4eb8d6e5d65b4498d84075723ccf4,
     type: 3}
   songObject: {fileID: 11400000, guid: 542b5ce5c2eb94e1bafac39a7bde2c75, type: 2}
+  fullSong: {fileID: 8300000, guid: 6367fb7a8bb9e4de187a7133af9cb4ff, type: 3}
+  circlePrefab: {fileID: 1013029158237388, guid: b8a98e7069639a84e83f9a295e6c4b16,
+    type: 3}
   circleSprite: {fileID: 21300000, guid: 1807b1a99ac14d54591b4255ebf3ec6a, type: 3}
   circleDotSprite: {fileID: 4645088979924962508, guid: ed59b75a99515af4dbf9f4c938ec8c7a,
     type: 3}

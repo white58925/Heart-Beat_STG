@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class LevelObject : ScriptableObject
 {
     [Header("Level info")]
-    
     public GameObject visualEffectObject;
     public SongObject songObject;
+    public AudioClip fullSong;
     [Header("Circle info")]
+    public GameObject circlePrefab;
     public Sprite circleSprite;
     public Sprite circleDotSprite;
 }

@@ -36,6 +36,7 @@ public class UIController : MonoBehaviour
     }
     private void Start()
     {
+        SongLoader.instance.PlayUIMusic(true);
         EventManager.StartListening("Arduino", ArduinoButtonClick);
     }
     private void OnDestroy()
@@ -100,7 +101,8 @@ public class UIController : MonoBehaviour
     }
     public void UIButtonClick(UIButton uiButtonType)
     {
-        switch(uiButtonType)
+        SongLoader.instance.PlaySoundEffect();
+        switch (uiButtonType)
         {
             case UIButton.Start:               
                 uiState = UIState.CharacterSelect;
@@ -117,6 +119,8 @@ public class UIController : MonoBehaviour
     }
     public void StartGame()
     {
+        SongLoader.instance.PlaySoundEffect();
+        SongLoader.instance.PlayUIMusic(false);
         PlayerPrefs.SetInt("Scene", 1);
         SongLoader.instance.LoadLevel(characterSelect.CurrentChar);
         //SongLoader.instance.LoadScene(1, SongType.Dance);
@@ -125,7 +129,8 @@ public class UIController : MonoBehaviour
     }
     public void ArduinoButtonClick()
     {
-        if(mainMenuGameObject.activeSelf)
+        SongLoader.instance.PlaySoundEffect();
+        if (mainMenuGameObject.activeSelf)
         {
             UIButtonClick((UIButton)index);
         }
@@ -135,7 +140,7 @@ public class UIController : MonoBehaviour
         }
     }
     public void SetCharacterSelect(int value)
-    {
+    {        
         characterSelect.SetChar(value);
     }
 }

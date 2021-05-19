@@ -18,7 +18,8 @@ public class CharacterSelect : MonoBehaviour
     }
 
     private void SelectChar(int index)
-    {
+    { 
+        SongLoader.instance.ChangeSong(index);
         previousButton.interactable = (index != 0);
         nextButton.interactable = (index != transform.childCount - 1);
 
@@ -35,7 +36,7 @@ public class CharacterSelect : MonoBehaviour
         SelectChar(currentChar);
     }
     public void SetChar(int value)
-    {
+    {        
         currentChar = value;
         SelectChar(currentChar);
     }

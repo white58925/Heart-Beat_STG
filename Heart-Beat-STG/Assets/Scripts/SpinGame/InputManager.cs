@@ -66,9 +66,24 @@ public class InputManager : MonoBehaviour {
             }
         }
         if (Input.GetKeyDown(KeyCode.Escape))
-        {                     
-            PlayerPrefs.SetInt("Scene", 0);
-            SceneManager.LoadScene(1);
+        {
+            LevelController.instance.SetPauseMenu(true);            
+        }
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            if (Time.timeScale == 0)
+            {
+                LevelController.instance.SetPauseMenu(false);
+                PlayerPrefs.SetInt("Scene", 0);
+                SceneManager.LoadScene(1);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            if (Time.timeScale == 0)
+            {
+                LevelController.instance.SetPauseMenu(false);
+            }
         }
         //if (Input.GetKeyDown(pause))
         //{
