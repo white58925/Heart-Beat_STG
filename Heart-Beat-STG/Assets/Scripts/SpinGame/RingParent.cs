@@ -27,7 +27,6 @@ public class RingParent : MonoBehaviour {
     public List<AudioClip> melodyNotes;
     public KeyCode ringKeycode;
     public AudioClip ringAudio;
-    public GameObject circlePrefab;
 
     private void Awake()
     {
@@ -43,7 +42,7 @@ public class RingParent : MonoBehaviour {
         for (int i = 0; i <beats.Count; i++)
         {
             //Instantiate the circle
-            GameObject newCircle = Instantiate(circlePrefab);
+            GameObject newCircle = Instantiate(SongLoader.instance.activeLevelObject.circlePrefab);
             CircleScript circleScript = newCircle.GetComponent<CircleScript>();
 
             //Initialize the Circle
