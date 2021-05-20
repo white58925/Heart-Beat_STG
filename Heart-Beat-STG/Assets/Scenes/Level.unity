@@ -153,12 +153,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ecbb71e2a914ee8ba21fbf2ce0da45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displacementMap: {fileID: 2800000, guid: 9273b688026ec4fc9b913999072afff5, type: 3}
+  displacementMap: {fileID: 2800000, guid: 9f9bafe6e54874534b29423d2c62cab0, type: 3}
   Shader: {fileID: 4800000, guid: 434e4be56dea542058e1cf4922f3beda, type: 3}
-  intensity: 0.57
-  flipIntensity: 0.57
-  colorIntensity: 0.57
-  glitchValue: 0.57
+  intensity: 0.355
+  flipIntensity: 0.355
+  colorIntensity: 0.355
+  glitchValue: 0.355
   source: {fileID: 8400000, guid: 69d9cb5a719754dc380ac698303cb337, type: 2}
   destination: {fileID: 8400000, guid: a903dd6bcafc543248b7a415a966bd56, type: 2}
 --- !u!114 &3798941

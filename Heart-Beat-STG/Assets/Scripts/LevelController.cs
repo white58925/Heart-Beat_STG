@@ -21,6 +21,7 @@ public class LevelController : MonoBehaviour
     public void SetPauseMenu(bool isActive)
     {
         Time.timeScale = isActive ? 0f : 1f;
+        PlayerPrefs.SetInt("useNoise", isActive ? 0 : 1);
         pauseMenu.SetActive(isActive);
     }
     public bool IsShowingPauseMenu()

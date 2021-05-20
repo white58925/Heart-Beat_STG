@@ -6,8 +6,6 @@ using TMPro;
 
 public class Conductor : MonoBehaviour {
 
-    [Header("Use Noise")]
-    public bool useNoise = true;
     [Header("Other")]
     public float noiseVolume = 0f;
     public float musicVolume = 1f;
@@ -77,7 +75,8 @@ public class Conductor : MonoBehaviour {
 
     // Use this for initialization
     void Start ()
-    {
+    {       
+        PlayerPrefs.SetInt("useNoise", SongLoader.instance.activeLevelObject.isTutorial ? 0 : 1);
         paused = false;
         pauseTimeStamp = -1f;
         //Calculate the number of seconds per beat
@@ -139,7 +138,7 @@ public class Conductor : MonoBehaviour {
     {
         if (PlayerPrefs.GetInt("useNoise",1) == 1)
         {
-            noiseVolume = (float)Mathf.Abs(UdinoController.analogRotationValue - musicTargetValue) / 200f;
+            noiseVolume = (float)Mathf.Abs(UdinoController.analogRotationValue - musicTargetValue) / 100f;
             noiseVolume = Mathf.Clamp(noiseVolume, 0, 1);
             musicVolume = 1 - noiseVolume;
             noise.volume = noiseVolume;

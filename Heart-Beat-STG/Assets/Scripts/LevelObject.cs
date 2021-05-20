@@ -5,6 +5,8 @@ using UnityEngine.UI;
 [CreateAssetMenu(menuName = "Level Object")]
 public class LevelObject : ScriptableObject
 {
+    [Header("Tutorial")]
+    public bool isTutorial;
     [Header("Level info")]
     public GameObject visualEffectObject;
     public SongObject songObject;

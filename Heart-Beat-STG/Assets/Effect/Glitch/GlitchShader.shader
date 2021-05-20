@@ -65,11 +65,10 @@ SubShader {
 			i.uv.xy += (normal.xy - 0.5) * displace * _Intensity;
 			
 			half4 color = tex2D(_MainTex,  i.uv.xy);
-			half4 redcolor = tex2D(_MainTex, i.uv.xy + direction.xy * 0.01 * filterRadius * _ColorIntensity);
-			half4 greencolor = tex2D(_MainTex,  i.uv.xy - direction.xy * 0.01 * filterRadius * _ColorIntensity);
+			// half4 redcolor = tex2D(_MainTex, i.uv.xy + direction.xy * 0.01 * filterRadius * _ColorIntensity);
 
-			color += fixed4(redcolor.r, redcolor.b, redcolor.g, 1) *  step(filterRadius, -0.001);
-			color *= 1 - 0.5 * step(filterRadius, -0.001);
+			// color += fixed4(redcolor.r, redcolor.b, redcolor.g, 1) *  step(filterRadius, -0.001);
+			// color *= 1 - 0.5 * step(filterRadius, -0.001);
 			
 			return color;
 		}

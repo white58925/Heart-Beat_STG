@@ -129,8 +129,14 @@ public class SequenceController : MonoBehaviour {
         }
         if (ringDone)
         {
+            if (nextIndex == 1 && SongLoader.instance.activeLevelObject.isTutorial)
+            {
+                PlayerPrefs.SetInt("useNoise", 1);
+            }
             if(SongLoader.instance.activeLevelObject.songObject.rings.Length == nextIndex)
             {
+                PlayerPrefs.SetInt("useNoise", 0);
+                Conductor.instance.SetNoiseAndMusicVolume();
                 visualControl.CreateEndingPrefab();
             }
             //Debug.Log("Ring set complete.");
