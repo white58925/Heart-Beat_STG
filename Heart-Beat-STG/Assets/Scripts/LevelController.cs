@@ -7,6 +7,7 @@ public class LevelController : MonoBehaviour
     [SerializeField]
     private GameObject pauseMenu;
     public static LevelController instance;
+
     private void Awake()
     {
         if (instance == null)
@@ -21,5 +22,9 @@ public class LevelController : MonoBehaviour
     {
         Time.timeScale = isActive ? 0f : 1f;
         pauseMenu.SetActive(isActive);
+    }
+    public bool IsShowingPauseMenu()
+    {
+        return pauseMenu.activeSelf;
     }
 }

@@ -12,7 +12,16 @@ public class InputManager : MonoBehaviour {
     public KeyCode pause;
     public KeyCode assist;
     public KeyCode assistAlt;
-
+    private void Start()
+    {
+        EventManager.StartListening("ArduinoEscapeButton", OnClickEscapeButton);
+        EventManager.StartListening("ArduinoEnterButton", ArduinoButtonClick);
+    }
+    private void OnDestroy()
+    {
+        EventManager.StopListening("ArduinoEscapeButton", OnClickEscapeButton);
+        EventManager.StopListening("ArduinoEnterButton", ArduinoButtonClick);
+    }
     private void Update()
     {
         if (!Conductor.paused)
@@ -67,7 +76,7 @@ public class InputManager : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            LevelController.instance.SetPauseMenu(true);            
+            OnClickEscapeButton();
         }
         if (Input.GetKeyDown(KeyCode.N))
         {
@@ -119,5 +128,25 @@ public class InputManager : MonoBehaviour {
         //        }
         //    }
         //}
+    }
+    private void OnClickEscapeButton()
+    {
+        if(!LevelController.instance.IsShowingPauseMenu())
+        {
+            LevelController.instance.SetPauseMenu(true);
+        }
+        else
+        {
+            LevelController.instance.SetPauseMenu(false);
+        }
+    }
+    private void ArduinoButtonClick()
+    {      
+        if (LevelController.instance.IsShowingPauseMenu())
+        {
+            LevelController.instance.SetPauseMenu(false);
+            PlayerPrefs.SetInt("Scene", 0);
+            SceneManager.LoadScene(1);
+        }            
     }
 }

@@ -67,9 +67,12 @@ public class CharacterSelect : MonoBehaviour
         SelectChar(currentChar);
     }
     public void SetChar(int value)
-    {        
-        currentChar = value;
-        SelectChar(currentChar);
+    {
+        if(currentChar != value && !isShowingCharacterInfo)
+        {
+            currentChar = value;
+            SelectChar(currentChar);
+        }
     }
     public void ShowCharacterInfo(int index)
     {

@@ -48,10 +48,11 @@ public class UdinoController : MonoBehaviour
                         {
                             rotationInitialValue = analogRotationValue;
                         }
-                        EventManager.TriggerEvent("Arduino");
+                        EventManager.TriggerEvent("ArduinoEnterButton");
                     }
                     else
                     {
+                        EventManager.TriggerEvent("ArduinoEnterButton");
                         EventManager.TriggerEvent("UpArrow");
                     }
                 }
@@ -60,16 +61,7 @@ public class UdinoController : MonoBehaviour
             {
                 if (number == 10003)
                 {
-                    if (PlayerPrefs.GetInt("Scene", 0) == 0)
-                    {
-                        Application.Quit();
-                    }
-                    else
-                    {
-                        PlayerPrefs.SetInt("Scene", 0);
-                        rotationInitialValue = analogRotationValue;
-                        SceneManager.LoadScene(1);
-                    }
+                    EventManager.TriggerEvent("ArduinoEscapeButton");
                 }
             }
             else
@@ -81,7 +73,6 @@ public class UdinoController : MonoBehaviour
                     {
                         UIController.Instance.SetCharacterSelect(GetAnaolgIndex(analogRotationValue));
                     }
-                    Application.Quit();
                 }
             }
         }

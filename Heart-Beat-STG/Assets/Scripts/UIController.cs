@@ -37,11 +37,13 @@ public class UIController : MonoBehaviour
     private void Start()
     {
         SongLoader.instance.PlayUIMusic(true);
-        EventManager.StartListening("Arduino", ArduinoButtonClick);
+        EventManager.StartListening("ArduinoEscapeButton", OnClickEscapeButton);
+        EventManager.StartListening("ArduinoEnterButton", ArduinoButtonClick);
     }
     private void OnDestroy()
     {
-        EventManager.StopListening("Arduino", ArduinoButtonClick);
+        EventManager.StopListening("ArduinoEscapeButton", OnClickEscapeButton);
+        EventManager.StopListening("ArduinoEnterButton", ArduinoButtonClick);
     }
     void Update()
     {
