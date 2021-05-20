@@ -9,4 +9,8 @@ public class VisualControl : MonoBehaviour
     {
         Instantiate(SongLoader.instance.activeLevelObject.visualEffectObject);
     }
+    public void CreateEndingPrefab()
+    {
+        Instantiate(SongLoader.instance.activeLevelObject.endingPrefab);
+    }
 }

@@ -18,5 +18,5 @@ MonoBehaviour:
   fullSong: {fileID: 8300000, guid: 097a4135ba61e47ddb0aae703484e6ee, type: 3}
   circlePrefab: {fileID: 1013029158237388, guid: 6330361b240bf8143a8f230ea2890006,
     type: 3}
-  circleSprite: {fileID: 21300000, guid: d73250a1bedc4c748802c1be5c2ee3d7, type: 3}
-  circleDotSprite: {fileID: 21300000, guid: 22e87c583d21a284690f5214eb5ef43e, type: 3}
+  endingPrefab: {fileID: 8806950328426173984, guid: 33a690e9569b2124db2c7071d80c9fcd,
+    type: 3}

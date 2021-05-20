@@ -55,11 +55,11 @@ public class UIController : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.RightArrow))
                 {
-                    characterSelect.ChangeChar(1);
+                    EventManager.TriggerEvent("RightArrow");
                 }
                 else if (Input.GetKeyDown(KeyCode.LeftArrow))
                 {
-                    characterSelect.ChangeChar(-1);
+                    EventManager.TriggerEvent("LefttArrow");
                 }
                 else if (Input.GetKeyDown(KeyCode.Space))
                 {
@@ -74,41 +74,17 @@ public class UIController : MonoBehaviour
                 }
             }
         }
-
-        if (Input.GetAxis("Horizontal") != 0)
+        if (Input.GetKeyDown(KeyCode.N))
         {
-            if (!keyDown)
+            if (PlayerPrefs.GetInt("useNoise", 1) == 1)
             {
-                if (Input.GetAxis("Horizontal") > 0)
-                {
-                    if (index < maxIndex)
-                    {
-                        index++;
-                    }
-                    else
-                    {
-                        index = 0;
-                    }
-                }
-                else if (Input.GetAxis("Horizontal") < 0)
-                {
-                    if (index > 0)
-                    {
-                        index--;
-                    }
-                    else
-                    {
-                        index = maxIndex;
-                    }
-                }
-                keyDown = true;
+                PlayerPrefs.SetInt("useNoise", 0);
             }
-        }
-        else
-        {
-            keyDown = false;
-        }
-        
+            else
+            {
+                PlayerPrefs.SetInt("useNoise", 1);
+            }
+        }               
     }
     public void UIButtonClick(UIButton uiButtonType)
     {

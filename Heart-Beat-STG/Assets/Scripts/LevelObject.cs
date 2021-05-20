@@ -11,4 +11,6 @@ public class LevelObject : ScriptableObject
     public AudioClip fullSong;
     [Header("Circle info")]
     public GameObject circlePrefab;
+    [Header("Ending")]
+    public GameObject endingPrefab;
 }

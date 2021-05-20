@@ -69,7 +69,18 @@ public class InputManager : MonoBehaviour {
         {
             LevelController.instance.SetPauseMenu(true);            
         }
-        if(Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            if(PlayerPrefs.GetInt("useNoise", 1) == 1)
+            {
+                PlayerPrefs.SetInt("useNoise", 0);
+            }
+            else
+            {
+                PlayerPrefs.SetInt("useNoise", 1);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.A))
         {
             if (Time.timeScale == 0)
             {

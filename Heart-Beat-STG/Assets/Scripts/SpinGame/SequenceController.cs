@@ -24,6 +24,9 @@ public class SequenceController : MonoBehaviour {
     [Header("Root")]
     public GameObject root;
     private int nextIndex = 1;
+    [Header("Visual")]
+    public VisualControl visualControl;
+
     private void Awake()
     {
         LoadParameters();
@@ -126,6 +129,10 @@ public class SequenceController : MonoBehaviour {
         }
         if (ringDone)
         {
+            if(SongLoader.instance.activeLevelObject.songObject.rings.Length == nextIndex)
+            {
+                visualControl.CreateEndingPrefab();
+            }
             //Debug.Log("Ring set complete.");
             //Set the volume up on each ring's track and trigger its complete animations
             foreach (int index in activeRings)

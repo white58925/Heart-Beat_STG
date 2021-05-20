@@ -137,7 +137,7 @@ public class Conductor : MonoBehaviour {
     }
     public void SetNoiseAndMusicVolume()
     {
-        if (useNoise)
+        if (PlayerPrefs.GetInt("useNoise",1) == 1)
         {
             noiseVolume = (float)Mathf.Abs(UdinoController.analogRotationValue - musicTargetValue) / 200f;
             noiseVolume = Mathf.Clamp(noiseVolume, 0, 1);

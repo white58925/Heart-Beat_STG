@@ -17,8 +17,36 @@ public class CharacterSelect : MonoBehaviour
     private void Awake()
     {
         SelectChar(0);
+        EventManager.StartListening("RightArrow", OnClickRightArrow);
+        EventManager.StartListening("LefttArrow", OnClickLeftArrow);
     }
+    private void OnDestroy()
+    {
+        EventManager.StopListening("RightArrow", OnClickRightArrow);
+        EventManager.StopListening("LefttArrow", OnClickLeftArrow);
+    }
+    private void OnClickRightArrow()
+    {
+        if(isShowingCharacterInfo)
+        {
 
+        }
+        else
+        {
+            ChangeChar(1);
+        }
+    }
+    private void OnClickLeftArrow()
+    {
+        if (isShowingCharacterInfo)
+        {
+
+        }
+        else
+        {
+            ChangeChar(-1);
+        }
+    }
     private void SelectChar(int index)
     { 
         SongLoader.instance.ChangeSong(index);
@@ -33,6 +61,7 @@ public class CharacterSelect : MonoBehaviour
 
     public void ChangeChar(int change)
     {
+        if (isShowingCharacterInfo) return;
         currentChar += change;
         currentChar = currentChar == characterCount ? 0 : currentChar == -1 ? characterCount - 1 : currentChar;
         SelectChar(currentChar);
