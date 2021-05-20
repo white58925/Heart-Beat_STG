@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7471038837304338221}
   - component: {fileID: 6875088473411768489}
   m_Layer: 0
-  m_Name: Charater_Red_End
+  m_Name: Charater_Tutorial_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: -1699179201
   m_SortingLayer: 3
   m_SortingOrder: 3
-  m_Sprite: {fileID: 5285119422961762140, guid: 7e4e3270504302c40ae027c0cecdb9c6,
+  m_Sprite: {fileID: -4675518406706579199, guid: b1aab16ebc86ae84b8150a6950ae6c8b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -93,7 +93,7 @@ Animator:
   m_GameObject: {fileID: 1113381540932367477}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9b70832b5fb3d674e95642d0c88f9332, type: 2}
+  m_Controller: {fileID: 9100000, guid: da117ca35159cd44aba656512001e1aa, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -173,7 +173,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 80d9ee14e4d25394096097dd25500ad4, type: 3}
-  m_Color: {r: 0.83137256, g: 0.5254902, b: 0.5477024, a: 1}
+  m_Color: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.83137256, g: 0.5254902, b: 0.5477024, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 3
   m_LightVolumeOpacity: 0.16
   m_ApplyToSortingLayers: 19a353755555d31d
@@ -366,7 +366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1120365647490481277}
   m_Layer: 0
-  m_Name: End_Red
+  m_Name: End_Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
