@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed128e6d09dd494b9335f5e821f1d18, type: 3}
   m_Name: Purple
   m_EditorClassIdentifier: 
+  isTutorial: 0
   visualEffectObject: {fileID: 7250530771541041045, guid: 0135739002f1b6c48a6f869e2de8e7ff,
     type: 3}
   songObject: {fileID: 11400000, guid: 3ac3e224440c94f54b07feaf6eb367d4, type: 2}
   fullSong: {fileID: 8300000, guid: c876ef0c0bf594b4f9fdea1892b63f47, type: 3}
   circlePrefab: {fileID: 1013029158237388, guid: 2bfe134104ae59844b7f4b1dd19a493d,
     type: 3}
-  endingPrefab: {fileID: 8806950328426173984, guid: 053e6fcb7cbaecb44bfbe359ce79f24f,
+  endingPrefab: {fileID: 8806950328426173984, guid: 03bab392da595304185b9598320fd246,
     type: 3}

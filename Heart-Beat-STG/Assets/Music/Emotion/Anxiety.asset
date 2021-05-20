@@ -56,16 +56,16 @@ MonoBehaviour:
     - 8
     - 8.5
     melodyNotes: []
-  - notesToTelegraph: 5
+  - notesToTelegraph: 6
     ringKeycode: 273
     ringTrack: {fileID: 8300000, guid: 0bdbed005fc2047e79f07526421fb807, type: 3}
     ringSample: {fileID: 0}
     useMelody: 0
     beats:
-    - 1
-    - 1.375
-    - 1.75
-    - 2
+    - 0.7
+    - 1.075
+    - 1.45
+    - 1.7
     - 5
     - 5.25
     - 5.75
