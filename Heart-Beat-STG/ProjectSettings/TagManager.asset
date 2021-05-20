@@ -50,6 +50,9 @@ TagManager:
   - name: Main Layer
     uniqueID: 500389205
     locked: 0
+  - name: End Layer
+    uniqueID: 2595788095
+    locked: 0
   - name: UI Background
     uniqueID: 37888847
     locked: 0
