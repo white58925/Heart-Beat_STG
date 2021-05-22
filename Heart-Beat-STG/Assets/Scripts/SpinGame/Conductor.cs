@@ -252,10 +252,10 @@ public class Conductor : MonoBehaviour {
     {
         //Change the middle button to a back button
         //Pop up a 'Complete' announcement
-        getReadyText.text = "同歩完成";
-        getReadyAnimator.SetTrigger("Complete");
-        announcementText.text = "「我還没準備好和他道別...」";
-        anouncementAnimator.SetTrigger("Complete");
+        //getReadyText.text = "同歩完成";
+        //getReadyAnimator.SetTrigger("Complete");
+        //announcementText.text = "「我還没準備好和他道別...」";
+        //anouncementAnimator.SetTrigger("Complete");
     }
 
     public void StopMetronome()

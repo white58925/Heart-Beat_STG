@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed128e6d09dd494b9335f5e821f1d18, type: 3}
   m_Name: Red
   m_EditorClassIdentifier: 
-  isTutorial: 0
+  isTutorial: 1
   visualEffectObject: {fileID: 1874593908126099855, guid: a5b4eb8d6e5d65b4498d84075723ccf4,
     type: 3}
   songObject: {fileID: 11400000, guid: 542b5ce5c2eb94e1bafac39a7bde2c75, type: 2}
