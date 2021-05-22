@@ -41,20 +41,20 @@ MonoBehaviour:
     ringSample: {fileID: 0}
     useMelody: 0
     beats:
-    - 1
-    - 1.5
-    - 2
-    - 2.5
-    - 3.5
-    - 4
-    - 4.5
-    - 5
-    - 5.5
-    - 6
-    - 6.5
-    - 7.5
-    - 8
-    - 8.5
+    - 1.3
+    - 1.8
+    - 2.3
+    - 2.8
+    - 3.8
+    - 4.3
+    - 4.8
+    - 5.3
+    - 5.8
+    - 6.3
+    - 6.8
+    - 7.8
+    - 8.3
+    - 8.8
     melodyNotes: []
   - notesToTelegraph: 6
     ringKeycode: 273
@@ -62,10 +62,10 @@ MonoBehaviour:
     ringSample: {fileID: 0}
     useMelody: 0
     beats:
-    - 0.7
-    - 1.075
-    - 1.45
-    - 1.7
+    - 1.2
+    - 1.575
+    - 1.95
+    - 2.2
     - 5
     - 5.25
     - 5.75

@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: b4e1db33cc9fc934090aad4cd5d2b50a
+guid: 486b2d326b87f3f43b90c23a831aa000
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2701101993432939692
-    second: CharacterInfo_Tutorial_0
+      213: -7874147359592853539
+    second: Character_Info_Blue_0
   - first:
-      213: 8710959196531035948
-    second: CharacterInfo_Tutorial_1
+      213: -6477468217235512383
+    second: Character_Info_Blue_1
   - first:
-      213: 3442783349985330093
-    second: CharacterInfo_Tutorial_2
+      213: 4817028167936836708
+    second: Character_Info_Blue_2
   - first:
-      213: -6103702399963360202
-    second: CharacterInfo_Tutorial_3
+      213: 2465571336591309324
+    second: Character_Info_Blue_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,12 +111,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CharacterInfo_Tutorial_0
+      name: Character_Info_Blue_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 229
+        width: 231
         height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -125,19 +125,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cac7ba4b3fd3c7520800000000000000
-      internalID: 2701101993432939692
+      spriteID: ddf436a02b869b290800000000000000
+      internalID: -7874147359592853539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterInfo_Tutorial_1
+      name: Character_Info_Blue_1
       rect:
         serializedVersion: 2
-        x: 229
+        x: 231
         y: 0
-        width: 229
+        width: 231
         height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -146,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2f87229c3b83e870800000000000000
-      internalID: 8710959196531035948
+      spriteID: 1c36bcbb9f86b16a0800000000000000
+      internalID: -6477468217235512383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterInfo_Tutorial_2
+      name: Character_Info_Blue_2
       rect:
         serializedVersion: 2
-        x: 458
+        x: 462
         y: 0
-        width: 229
+        width: 231
         height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -167,19 +167,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da34186573937cf20800000000000000
-      internalID: 3442783349985330093
+      spriteID: 4640de6d89589d240800000000000000
+      internalID: 4817028167936836708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterInfo_Tutorial_3
+      name: Character_Info_Blue_3
       rect:
         serializedVersion: 2
-        x: 687
+        x: 693
         y: 0
-        width: 229
+        width: 231
         height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -188,8 +188,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6341c7b810b4b4ba0800000000000000
-      internalID: -6103702399963360202
+      spriteID: c0af8e54118773220800000000000000
+      internalID: 2465571336591309324
       vertices: []
       indices: 
       edges: []

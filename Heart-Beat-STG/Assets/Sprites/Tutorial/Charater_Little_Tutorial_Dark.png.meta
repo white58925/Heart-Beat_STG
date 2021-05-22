@@ -1,19 +1,7 @@
 fileFormatVersion: 2
-guid: ce6495707f552524c9e5410ebc1e2fde
+guid: 64e0cce17cd2cd04aaa5e5476ee0ce13
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -4211773942241812106
-    second: CharacterInfo_Blue_0
-  - first:
-      213: 8999414560222508336
-    second: CharacterInfo_Blue_1
-  - first:
-      213: 6485499223868579338
-    second: CharacterInfo_Blue_2
-  - first:
-      213: 8687549363706526296
-    second: CharacterInfo_Blue_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -76,7 +64,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -88,7 +76,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +88,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,91 +97,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: CharacterInfo_Blue_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 229
-        height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6712e6a1ae5cc85c0800000000000000
-      internalID: -4211773942241812106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharacterInfo_Blue_1
-      rect:
-        serializedVersion: 2
-        x: 229
-        y: 0
-        width: 229
-        height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0357a809cd754ec70800000000000000
-      internalID: 8999414560222508336
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharacterInfo_Blue_2
-      rect:
-        serializedVersion: 2
-        x: 458
-        y: 0
-        width: 229
-        height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0e12c5be2f110a50800000000000000
-      internalID: 6485499223868579338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharacterInfo_Blue_3
-      rect:
-        serializedVersion: 2
-        x: 687
-        y: 0
-        width: 229
-        height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85af5602e10609870800000000000000
-      internalID: 8687549363706526296
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
