@@ -119,7 +119,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
+        width: 66
         height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -138,9 +138,9 @@ TextureImporter:
       name: CircleHit_Tutorial_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 0
-        width: 64
+        width: 66
         height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -159,9 +159,9 @@ TextureImporter:
       name: CircleHit_Tutorial_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 132
         y: 0
-        width: 64
+        width: 66
         height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -180,9 +180,9 @@ TextureImporter:
       name: CircleHit_Tutorial_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 198
         y: 0
-        width: 64
+        width: 66
         height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -201,9 +201,9 @@ TextureImporter:
       name: CircleHit_Tutorial_4
       rect:
         serializedVersion: 2
-        x: 256
+        x: 264
         y: 0
-        width: 64
+        width: 66
         height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
