@@ -14,6 +14,12 @@ TextureImporter:
   - first:
       213: -5421818850297646626
     second: Character_Info_Tutorial_3
+  - first:
+      213: 5507489019999275242
+    second: Character_Info_Tutorial_4
+  - first:
+      213: -3375080985067282289
+    second: Character_Info_Tutorial_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -190,6 +196,48 @@ TextureImporter:
       bones: []
       spriteID: ed1fd7f4b74d1c4b0800000000000000
       internalID: -5421818850297646626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Info_Tutorial_4
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 0
+        width: 231
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8cb6175188e6c40800000000000000
+      internalID: 5507489019999275242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Info_Tutorial_5
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 0
+        width: 231
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80a3ecd9bd4921d0800000000000000
+      internalID: -3375080985067282289
       vertices: []
       indices: 
       edges: []

@@ -14,6 +14,18 @@ TextureImporter:
   - first:
       213: 2465571336591309324
     second: Character_Info_Blue_3
+  - first:
+      213: 4279055335350891907
+    second: Character_Info_Blue_4
+  - first:
+      213: -4514107270998261142
+    second: Character_Info_Blue_5
+  - first:
+      213: 6592651041718198612
+    second: Character_Info_Blue_6
+  - first:
+      213: 5390639542953165024
+    second: Character_Info_Blue_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -190,6 +202,90 @@ TextureImporter:
       bones: []
       spriteID: c0af8e54118773220800000000000000
       internalID: 2465571336591309324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Info_Blue_4
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 0
+        width: 231
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38574d5f722426b30800000000000000
+      internalID: 4279055335350891907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Info_Blue_5
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 0
+        width: 231
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6204229a5baa51c0800000000000000
+      internalID: -4514107270998261142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Info_Blue_6
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 0
+        width: 231
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451e8bd613dcd7b50800000000000000
+      internalID: 6592651041718198612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Info_Blue_7
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 0
+        width: 231
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0c5ed7a166fca40800000000000000
+      internalID: 5390639542953165024
       vertices: []
       indices: 
       edges: []

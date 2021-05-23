@@ -14,6 +14,12 @@ TextureImporter:
   - first:
       213: -8790705257463168962
     second: Character_Info_Purple_3
+  - first:
+      213: -6686872390603314142
+    second: Character_Info_Purple_4
+  - first:
+      213: 4131134962900311900
+    second: Character_Info_Purple_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -190,6 +196,48 @@ TextureImporter:
       bones: []
       spriteID: e30cfbbb424210680800000000000000
       internalID: -8790705257463168962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Info_Purple_4
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 0
+        width: 231
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ce8b34df47333a0800000000000000
+      internalID: -6686872390603314142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Info_Purple_5
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 0
+        width: 231
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f9ede6c5db45930800000000000000
+      internalID: 4131134962900311900
       vertices: []
       indices: 
       edges: []

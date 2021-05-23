@@ -14,6 +14,12 @@ TextureImporter:
   - first:
       213: -5204934297564230070
     second: Character_Info_Red_3
+  - first:
+      213: -7912686690392276983
+    second: Character_Info_Red_4
+  - first:
+      213: -4470513971506744799
+    second: Character_Info_Red_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -190,6 +196,48 @@ TextureImporter:
       bones: []
       spriteID: a4ecf6255db54c7b0800000000000000
       internalID: -5204934297564230070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Info_Red_4
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 0
+        width: 231
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9000538d06d703290800000000000000
+      internalID: -7912686690392276983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Info_Red_5
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 0
+        width: 231
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1227bec8a3b85f1c0800000000000000
+      internalID: -4470513971506744799
       vertices: []
       indices: 
       edges: []
