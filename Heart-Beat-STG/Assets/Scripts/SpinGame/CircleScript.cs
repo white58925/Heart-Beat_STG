@@ -17,7 +17,7 @@ public class CircleScript : MonoBehaviour {
     public float beat;
     public KeyCode keyCode;
     public int measure;
-    public GameObject arrow;
+    //public GameObject arrow;
 
     private void Awake()
     {
@@ -147,7 +147,7 @@ public class CircleScript : MonoBehaviour {
     {
         //Debug.Log("Activating Small Ring");
         active = true;
-        if (!arrow.activeInHierarchy) arrow.SetActive(true);
+        //if (!arrow.activeInHierarchy) arrow.SetActive(true);
         ExpandCircle();
     }
 
@@ -191,7 +191,7 @@ public class CircleScript : MonoBehaviour {
             CollapseDot();
             didHit = false;
         }
-        arrow.SetActive(false);
+        //arrow.SetActive(false);
     }
 
     //
