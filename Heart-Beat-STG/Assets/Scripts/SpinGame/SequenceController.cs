@@ -143,12 +143,12 @@ public class SequenceController : MonoBehaviour {
             //Set the volume up on each ring's track and trigger its complete animations
             foreach (int index in activeRings)
             {
-                Conductor.instance.loops[index].volume = Conductor.instance.musicVolume;
+                Conductor.instance.loops[index].volume = 1f;
                 ringParents[index].CompleteRing();
             }
             if (nextIndex < SongLoader.instance.activeLevelObject.songObject.rings.Length)
             {
-                Conductor.instance.loops[nextIndex].volume = Conductor.instance.musicVolume;
+                Conductor.instance.loops[nextIndex].volume = 1f;
                 nextIndex++;
             }
             //Activate the next set of rings
