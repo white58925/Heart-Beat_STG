@@ -90,7 +90,7 @@ public class Conductor : MonoBehaviour {
         loopPosInBeats = songPosInBeats + 1;
         loopPosInAnalog = (loopPosInBeats - 1) / timeSig;
         //Run the countdown preparing to start
-        musicTargetValue = Random.Range(30, 40);
+        musicTargetValue = Random.Range(40, 60);
         SetNoiseAndMusicVolume();
         StartCoroutine(CountDown());
     }

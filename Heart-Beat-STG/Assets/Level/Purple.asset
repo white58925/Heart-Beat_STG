@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed128e6d09dd494b9335f5e821f1d18, type: 3}
   m_Name: Purple
   m_EditorClassIdentifier: 
-  isTutorial: 1
+  isTutorial: 0
   visualEffectObject: {fileID: 7250530771541041045, guid: 0135739002f1b6c48a6f869e2de8e7ff,
     type: 3}
   songObject: {fileID: 11400000, guid: 3ac3e224440c94f54b07feaf6eb367d4, type: 2}
