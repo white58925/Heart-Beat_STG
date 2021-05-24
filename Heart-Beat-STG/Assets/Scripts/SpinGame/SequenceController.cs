@@ -9,7 +9,7 @@ public class SequenceController : MonoBehaviour {
     //Right now this has to be 2 because of hard coded animation properties. I probably won't change it
     public float mainDistance = 2;
     public float ringSpacing;
-    public List<int> activeRings = new List<int>();
+    public static List<int> activeRings = new List<int>();
 
     [Header("Ring Properties")]
     public int simultaneousRings;

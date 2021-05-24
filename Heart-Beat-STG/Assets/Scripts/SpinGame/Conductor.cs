@@ -142,6 +142,10 @@ public class Conductor : MonoBehaviour {
             noiseVolume = Mathf.Clamp(noiseVolume, 0, 1);
             musicVolume = 1 - noiseVolume;
             noise.volume = noiseVolume;
+            foreach (int index in SequenceController.activeRings)
+            {
+                loops[index].volume = musicVolume;
+            }
             musicSource.volume = 0;
         }
         else
@@ -149,6 +153,10 @@ public class Conductor : MonoBehaviour {
             noiseVolume = 0f;
             musicVolume = 1f;
             noise.volume = 0f;
+            foreach (int index in SequenceController.activeRings)
+            {
+                loops[index].volume = 1f;
+            }
             musicSource.volume = 0;
         }
     }
