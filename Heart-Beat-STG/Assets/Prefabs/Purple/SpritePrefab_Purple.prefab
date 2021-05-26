@@ -684,6 +684,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198312048770068008, guid: 401909eb46db75743a45bbc9ade177ca,
         type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198312048770068008, guid: 401909eb46db75743a45bbc9ade177ca,
+        type: 3}
       propertyPath: InitialModule.startLifetime.scalar
       value: 5
       objectReference: {fileID: 0}
@@ -695,6 +700,11 @@ PrefabInstance:
     - target: {fileID: 198312048770068008, guid: 401909eb46db75743a45bbc9ade177ca,
         type: 3}
       propertyPath: InitialModule.startLifetime.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 198312048770068008, guid: 401909eb46db75743a45bbc9ade177ca,
+        type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 199298021193592012, guid: 401909eb46db75743a45bbc9ade177ca,
@@ -817,6 +827,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198312048770068008, guid: 401909eb46db75743a45bbc9ade177ca,
         type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198312048770068008, guid: 401909eb46db75743a45bbc9ade177ca,
+        type: 3}
       propertyPath: InitialModule.startLifetime.scalar
       value: 5
       objectReference: {fileID: 0}
@@ -829,6 +844,16 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startLifetime.minMaxState
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 198312048770068008, guid: 401909eb46db75743a45bbc9ade177ca,
+        type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 198312048770068008, guid: 401909eb46db75743a45bbc9ade177ca,
+        type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.minScalar
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 199298021193592012, guid: 401909eb46db75743a45bbc9ade177ca,
         type: 3}
